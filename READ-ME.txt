@@ -1,0 +1,302 @@
+WALLET CREADORA DE TOKEN MITHR
+attend unit web vicious increase wise patch chimney letter huge question define west gold buyer
+D1nr4d7x.-7X
+address inicial de recepcion: 
+addr1qx5qa8wggxlu2keu5v2xzpavqjgpgyqrylflffhxw44yfwkew8zfxunwcenggd2r677gqnw9hkaywvs7p2w46kl6ssds52m5ur
+
+se transfirieron 5 ADAS de la wallet de MIRTH original (la de arriba), con fee: ₳ 0.180505
+a "addr1qx5qa8wggxlu2keu5v2xzpavqjgpgyqrylflffhxw44yfwkew8zfxunwcenggd2r677gqnw9hkaywvs7p2w46kl6ssds52m5ur"
+
+
+TOKEN CREADO CON: 
+https://wallet.gamechanger.finance/transaction/a2caa01a0b4a572b40ffbb01b0e325b17bb47b02575a10f4c615f5c91c26f771
+
+POOL.PM
+https://pool.pm/addr1qx5qa8wggxlu2keu5v2xzpavqjgpgyqrylflffhxw44yfwkew8zfxunwcenggd2r677gqnw9hkaywvs7p2w46kl6ssds52m5ur
+https://pool.pm/asset1dqesy9s4hf7z2wdf5tqftlg7mr8futphr6frxz
+
+CARDANO SCAN: 
+https://cardanoscan.io/token/08f15b0fdcff80bd7c83e3226ac7b3a425d32c940ac157720c30c00b4d49544852
+
+POLICY: 
+https://pool.pm/policy/08f15b0fdcff80bd7c83e3226ac7b3a425d32c940ac157720c30c00b
+
+Title: Mithrandir Utility Token
+Hash: a2caa01a0b4a572b40ffbb01b0e325b17bb47b02575a10f4c615f5c91c26f771
+Included at: 2022-11-24T00:55:57Z
+Invalid before slot: 77684998
+Invalid after slot: 77771398
+Size: 1002
+Is GameChanger Dapp: true
+Cardano audit: View transaction in block explorer
+
+nputs
+From  Mithrandir Token Creator (You) addr1qx5qa8wgg...m5ur:
+icon
+ADA
+ Cardano Coin
+5 ADA
+Outputs
+To  Mithrandir Token Creator (You) addr1qx5qa8wgg...m5ur:
+icon
+ADA
+ Cardano Coin
+2.46 ADA
+icon
+ADA
+ Cardano Coin
+2.34 ADA
+08f15b0fdcff80bd7c83e3226ac7b3a425d32c940ac157720c30c00b
+MITHR
+ asset1dqe...frxz
+x42000000
+Mint
+08f15b0fdcff80bd7c83e3226ac7b3a425d32c940ac157720c30c00b
+MITHR
+ asset1dqe...frxz
+x42000000
+
+Scripts
+# 0:
+type: timelock
+Script Hash: 08f15b0fdcff80bd...c00b
+
+Metadata
+{
+  "73": {
+    "v": "1.0",
+    "type": "tx",
+    "title": "Mithrandir Utility Token"
+  },
+  "677673": {
+    "08f15b0fdcff80bd7c83e3226ac7b3a425d32c940ac157720c30c00b": {
+      "type": "all",
+      "scripts": [
+        {
+          "type": "sig",
+          "keyHash": "a80e9dc841bfc55b3ca3146107ac049014100327d3f4a6e6756a44ba"
+        },
+        {
+          "type": "sig",
+          "keyHash": "924b2cb3508acefc6f8bcfdc449f334c2fe210aab63a4c3f9e00edc4"
+        },
+        {
+          "slot": 77684998,
+          "type": "after"
+        }
+      ]
+    }
+  }
+}
+
+REGISTRARLO: 
+DIJO TOPO: 
+tienes que registrar el token en el cardano token registry
+https://github.com/cardano-foundation/cardano-token-registry
+los ATADA scripts te ayudan a generar incluso el archivo con la metadata para el registry por si lo quieres chusmear
+https://github.com/gitmachtl/scripts
+------------------------------------------------------------
+
+QUE QUEDO POR HACER:
+----------------------------------------------------
+- Agregar "DONACIONES A $MITHR" <--- DONE
+- Agregar "¿Queres ser voluntarios? Anotate!"
+- Luego de probar el chat de MITHR, agregar link a TELEGRAM desde la pagina WEB
+- Agregar Discord
+- Agregar VOLUNTARIOS que participaron (mencionarlos) 
+- Mostrar el token minteado en POOL.PM
+- Agregar Tokenomics
+- Agregar texto acerca del NFT en Whitepaper
+
+- Crear canales de discord
+- PONER EL POLICY ID del TOKEN
+- Agregar info al WHITE PAPER, por ejemplo, lo de paneles solares, participacion de voluntarios, etc (ver cuadernito).
+- Agregado de galeria de NFTS en la misma pagina de mithr.io para poder mezclar NFTS de distintas cadenas y poder exponerlos. 
+- Crearla en INGLES (Internacionalizacion) 
+- Agregar Widget de Google para traducir. 
+- https://www.revolvermaps.com/livestats/5x69hjxsp0p/ ponerlo para saber estadisticas de visitas
+
+- Agregar Wallet connector para poder pagar con ADAs y enviar TOKENS
+
+- Agregar hitos, eventos posibles en VIVO, promesas a futuro (ej: 1) agregar conexion a wallet para pagar ADA x tokens, 
+crecion de App para control y reclamo de recompensas, lugares que aceptarn el token etc... Uso de Glide, 
+si es que Ulises no consigue Gente x tokens) 
+ --> potencial HITO: Moneda 3D para imprimir y vender con su COrrespondiente foto NFT
+
+- Creacion de NFTs en OPENSEA. Que me siga pasando Imangenes para poder tokenizar como NFTs y hago colecciones. 
+- Creacion con IA una base y generacion de mas NFTS
+- Creacion de Token en Polygon, para posterior emision y pago en comercios.
+- Ver integracion con "paper" para vender NFTs con Tarjeta de Credito.
+- CREAR MINI PORTAL DE EDUCACION PARA USUARIOS NOVATOS
+
+--------------------------------------------------------
+OBJETIVO DE MICROECONOMICO DE ECOTURISMO: 
+- poder comprar y vender "objetos de la vida real" con TOKEN MITHR.
+  "seria un gran HITO poder lograr un intercambio de productos con el token"
+   (ya se estan intercambiando por servicios, ej: creacion de NFTs)
+
+Esto, puede llevar a crear un MARKETPLACE de intercambio de servcios y productos por $MITHR
+Preguntas, ejemplos: 
+¿Como gano yo? pregunta el usuario... el vendedor, el comprador, etc
+SI compro con MITHR, otro me los acepta. Eso es todo. 
+EN FERIAS de cordoba, de artesanos. Se podria comprar y vender TODOS los articulos 
+de la feria, aceptando token $MITHR
+
+--------------------------------------------------------
+
+
+LA COMUNIDAD PUEDE CREAR Y APORTAR VALOR AL PROYECTO ECOTURISITCO; 
+POR EJEMPLO; CREANDO APPS QUE SIRVAN A LA COMUNIDAD COMO SER:
+- LOTERIA MITHR -> se suman comprando un ticket de 5 MITHR, Cuando se llegan a "x" tickets 
+comprado se sortea el total, y el SMART CONTRACT envia el premio directamente a la billetera del ganador
+- SISTEMA DE REMATES DE PRODUCTOS...
+- SER VOLUNTARIO PARA PLANTAR 
+- SER VOLUNTARIO PARA MANEJAR LAS REDES , ADMINS; COMMUNITY MANAGERS
+- SER VOLUNTARIO PARA CREAR CONTENIDO DE EDUCACION PARA LOS USUARIOS
+- etc...
+
+- Usar ALERTAS PUSH de TangoCrypto para ver las notificaciones de transferencias
+- INTEGRACION CON POLYGON; ETH; MILKOMEDA; POLKADOT (MoonBeam) <-- por ej, podemos usar SORA, BNB, ETC.
+- INtencion de crear un NODO de Stake Pool 
+- creacion de wallet propia SUPER SIMPLE y MINIMALISTA para que cualquiera pueda usarla 
+"c/agenda" por comercios y personas (custodial inicialmente)
+
+--------- EXTRAS -------------------------------------------------------------
+CONSEGUIR ALGUIEN QUE HAGA - Moneda 3D para imprimir y vender con su COrrespondiente foto NFT
+CONSEGUIR ALGUIEN QUE HAGA - App Mobile de recompensas
+Uso de IA para reconocimiento de imagens y video que validen la tarea
+
+Lista de personas a quien hay que darle token extras de regalo
+-----------------------------------------------------------------------
+1- Jorge Cordoba (Diseñador y programador) (miembro del equipo)
+2- Gabo: Diseñador de logos.
+3- Maxi murad influencer y editor de vídeos
+4- Alberto Medrano (Prensa Bolivia) (Miembro del equipo)
+5- Elias Espinoza (Brigadistas de incendios en Punilla).
+6- Dominique Gromez (Miembro del equipo) 
+7- Martín del Pool Latin (Si es que te ayuda en algo)
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Que hacemos? 
+Criptoactivo con liquidez , o SIN liquidez? 
+
+EJEMPLO: 
+Con liquidez: https://app.preprod.wingriders.com/pools/new
+
+Create a new pool
+Select a pair of tokens to provide liquidity to a new pool.Creating a liquidity pool explained
+
+CITALDOC --> 42 000 000
+tADA     --> 10 (~$3.11)
+Receive LP tokens --> 20.492.901
+Total Fee: 5.707615 tADA
+
+CREAR NEW POOL: 
+
+Confirm adding liquidity
+Owner's address: addr_test1qz…sc
+
+tADA -> 10
+CITALDOC -> 42 000 000
+
+Create pool details
+TRANSACTION FEE -> 1.556845 tADA
+CREATE POOL OIL -> 4.15077 tADA
+RECEIVE LP TOKENS -> 20 492 901
+Agent fee -> 2 tADA
+Pool oil -> 3 tADA
+
+CITALDOC asset fingerprint
+asset1d3vevv07z8mfjk8esyfl5q38ur0uknpmlc5c4j
+
+Share asset fingerprint
+asset1xzejs33yy6pca574p58wg3dagaxam0juc3cvtd
+
+Factory asset fingerprint
+asset1xxj2pdxukq46l77acg2s3jkyqmj2jmsr46u7xg
+
+Factory address
+addr_test1wqlmzncfxe78nh85rq5mjkvjlhqfrrfjxjmvr3mv2j456ls49lq2c
+
+Factory datum hash
+Left: datum1hezgrtj7njxr52yxa5rnjgpflnymngh5yat3dmgmmshr9a55zq6syutm99
+Right: datum1cx8hrcswtqzqq7adx9g5u53gwc9tf8ffq0lura67sgz2uc693ejqdpjjmp
+
+Request address
+addr_test1wz6zjuut6mx93dw8jvksqx4zh5zul6j8qg992myvw575gdsgwxjuc
+
+Pool address
+addr_test1wqzc3jyfefuv4vj8zhk0vg78yxwjeuk4qdc68twua2gsr6qqujmch
+
+Liquidity pool datum hash
+datum1grnvt9u7xdpqk89tn7vgjt8wl5ga5yevpzguem9mapxevgx5df0qj9f4rg
+
+Script data hash
+script_data1t334hvpujjza9nukcpnm83rh6pvs754kvz7pafm49s7v0ut3guys46dng3
+
+FIRMO TRANSACCION: 
+app.preprod.wingriders.com
+This app requests a signature for:
+15.707615 t₳
+1.556845 t₳ fee
+
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+EDUCANDO A USUARIOS DEL TOKEN: (https://www.youtube.com/watch?v=7p9uvTYR7Z4)
+
+WEB 1.0 		WEB 2.0 		WEB 3.0
+Links			Likes			Assets
+Consumidores		Creadores		Monetizadores
+Centralizada		Centralizada		Descentralizada
+Bulletin Board		Algoritmos		Comuinidades
+
+WEB3 Assests <-- que le da valor?
+NFTs 			<-- Propiedades
+Tokens 			<-- Monedas
+Smart Contracts 	<-- Contratos
+
+WEB3 Tools
+Wallets 		<-- Billetera
+Discord / Telegram 	<-- Comunidad 
+Metaverso 		<-- Comunidad 
+
+Las comunidades se construyen a si mismas, con gente boca a boca, en sus propios espacios, 
+emiten sus propias monedas, y se gobiernan y monetizan a si mismas.  
+
+DISCORD: (canales)
+Terminos y Condiciones
+#Nuevos_Mithrers
+#Empezar
+#Tutoriales
+
+#Billeteras_de_Confianza
+#Quiero_Mithr
+#Tengo_Mithr
+#Remates
+#Anuncios
+
+#Billeteras_Turbias
+#Scams
+
+#Arte_y_NFTs
+#MEMES
+#Cordoba_Natural
+#Colaborar
+#Voluntarios
+
+Que hacer para avanzar con el proyecto?
+#1 community driven   	(manejar juntadas de personas en eventos reales o virtuales) 
+#2 co-creacion  	(crear en conjunto con todos )
+#3 token-share		(compartir tokens propios del proyecto, con utilidad real)
+#4 Ownership		(hacerse cargo y responsable de llegar del punto A al punto B - cada uno aporta y se compromete)
+#5 diversidad		(gente de TODOS tipos de industrias, etc. Siempre se sacan buenas ideas en estos ambientes)
+#6 taleto 		(Debe haber "cerebros" que lideren para empujar a la comunidad)
+
+Mantener interes y apoyo en el tiempo, aportando valor, infraestructura, crecimiento , etc.
+https://ladiaria.com.uy/cotidiana/articulo/2021/6/neri-peso-una-comunidad-de-intercambio-con-moneda-virtual-basada-en-la-confianza/
+--------------------------------------------------
+RE REDACTAR ARTICULOS UTILES , COMO SER: 
+https://cardanosintecnicismos.substack.com/p/las-nfts-no-son-unicamente-para-arte
+
+

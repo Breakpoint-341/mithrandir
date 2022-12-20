@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mithrandir CryptoCoin - Ecocripto</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 45px;">MITHRANDIR</h2>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-4 py-lg-0">                
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#"  class="nav-item nav-link" onclick="javascript: alert('PROXIMAMENTE!');">Educación Financiera</a> <!-- educacion.html -->
+                <a href="whitepaper/WhitePaperMITHR.pdf" class="nav-item nav-link active">Descarga el White Paper</a> 
+            </div>
+            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/profile.php?id=100088311543998" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://twitter.com/Tokenmithr" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.youtube.com/@chacramithrandir2189" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://t.me/+JkZmBpevDvVlNjlh" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>  
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">MITHR, El Token que te recompensa por cuidar el ecosistema.</h1>
+                    <p class="animated slideInDown">Te recompensamos por cuidar el planeta. En Mithrandir estamos convencidos de que la mejor manera
+                        de aportar valor es ayudando a cuidar el mediambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos 
+                        con Token MITHR</p>
+
+                        <!-- ******************  VOLUNTARIADO FORM *********************** -->
+                        <div class="col-md-10">
+                            <h5 class="mb-4" ID="voluntario"><i>¿Quieres ser VOLUNTARIO?</i></h5>
+                            <p>¡Sumate a nuestro equipo! Las puertas estan abiertas!<br> Déjanos tu email y contactaremos a la brevedad posible.</p>
+                            <form id="voluntario-contact-form" name="voluntario-contact-form" method="post" action="voluntario.php">
+                                <div class="position-relative">
+                                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu email" name="voluntarioEmail" class="form-control" placeholder="voluntarioEmail" required>
+                                    <button type="submit" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">QUIERO SER VOLUNTARIO!</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- ******************  END VOLUNTARIADO FORM *********************** -->                             
+                        <p></p>
+                        <div> 
+                            <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"><a href="https://pool.pm/asset1dqesy9s4hf7z2wdf5tqftlg7mr8futphr6frxz" target="_blank">Ver Token $MITHR en Pool.pm</a> </h3>                            
+                        </div>               
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/hero-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="mision">
+        <div class="container">
+            <div class="row g-5 align-items-baseline">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/about.png" alt="MITHR" style="vertical-align: top;" >   
+                    <p><br><br></p>
+                    <p>
+                        En materia de Forestación, planeamos hacer actividades de recompensas para fomentar y educar sobre la importancia que resulta 
+                        para la existencia humana el sencillo acto de forestar distintas especies, por eso para los sujetos de ciudad haremos mediante 
+                        las redes sociales, campañas de forestar plantas en macetas y a cambio recibirán Token de regalos como premio,  a los sujetos 
+                        de las periferias a las grandes ciudades o de zonas rurales los recompensaremos con Tokens por plantar árboles, y así diversas 
+                        estrategias de educación ambiental, mediante el simple acto de tomar parte en el cuidado del medioambiente, y allí resulta útil 
+                        y vital la existencia del Token para poder hacer llegar ese premio a esa conciencia colectiva sobre políticas ambientales. <br>
+                        Por otro lado a medida que el tiempo transcurra más comercios y vendedores de bienes y servicios aceptaran este Token como 
+                        medio de intercambio por sus bienes y servicios, motivo que aquellas personas que tengan Token Mithrandir (MITHR), podrán 
+                        canjearlos por las necesidades que su ritmo de vida le indiquen. Haciendo de esta forma rendir más sus salarios que cobran
+                         en su vida privada. Por ende, tener conciencia ambiental, será el inicio de un cambio en la calidad de sus vidas, y este Token
+                          ayudará en esa línea, dado que canjearán el token por productos o servicios de los locales y comercios que lo acepten. 
+                    </p>                                                         
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100" >
+                        <h1 class="display-6">¿Cual es nuestra misión?</h1>
+                        <p class="text-primary fs-5 mb-4">Somos una platforma encargada de cuidar el ecosistema terrestre, el medio ambiente consideramos que es vital para la existencia humana.</p>
+                        <p>
+                            Nuestra misión mediante la creación de este proyecto denominado Mithhrandir es entre varias cuestiones reconocer 
+                            y valorar el trabajo y los recursos no pagados (o mal pagados) que los sujetos que se dedican a realizar estas tareas 
+                            tienen como realidad en la actualidad de todos los Estados Nacionales. Este Token ayudará a estimular su trabajo, y que 
+                            puedan tener una mejor calidad de vida, creemos y sabemos.
+                        </p>
+                        <p>
+                            Estos trabajos están relacionados directa e indirectamente con la calidad de vida de la humanidad. Además estas tareas 
+                            que realizan estas mujeres y hombres  son esenciales para que las comunidades se vuelvan saludables, sostenibles y resilientes, 
+                            ayudando a cuidar el medioambiente y el planeta. Abogamos en un futuro porque en todos los ingresos a las grandes ciudades 
+                            ya no haya basurales a cielo abierto, quema de basura, y derrame de fluidos contaminantes en cuencas hídricas entre varias cuestiones, 
+                            allí es dónde este tipo de proyectos puede ser útil en comunión con las políticas estatales medioambientales. 
+                        </p>
+                       
+                        <p class="mb-4"><b>Resumiendo te damos unos ejemplos sobre los actos que tendrán recompensa en forma de Tokens:</b></p>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                            <span>Plantar un árbol, cuidar plantas, plantar plantas, limpiar parques, limpiar las costas de ríos...</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                            <span>Cuidar la energía, cuidar el agua potable, reducir residuos, reciclar desechos...</span>
+                        </div>
+                        
+                        <span>
+                                Todos aquellos otros proyectos existentes que se relacionen en esta línea de cuidado 
+                                medioambiental aceptarán el Token Mithrandir como medio de pago por sus servicios ofrecidos
+                                o por manufacturas que vendan, por ende acumular estos Tokens te puede dar beneficios de ser canjeados 
+                                por distintos bienes y servicios haciendo que tu calidad de vida aumente. Por ejemplo, si visitan el lugar 
+                                de hospedaje Chacra Mithrandir, podrán canjear estos Tokens por noches de alojamiento, y así muchos otros 
+                                comercios les darán beneficios. 
+                        </span> 
+                        <br>                       <br>
+                        <a class="btn btn-primary py-3 px-4" href="#team">¿Quieres conocer nuesto equipo?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl bg-light py-5 my-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid mb-4" src="img/token circulo.png" style="height: 100px; width: 100px;">
+                    <h1 class="display-4" data-toggle="counter-up">420,000,000</h1>
+                    <p class="fs-5 text-primary mb-0">Suministro total de Tokens</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid mb-4" src="img/NFT nº24 .jpg" style="height: 100px; width: 100px;">
+                    <h1 class="display-4" data-toggle="counter-up">22</h1>
+                    <p class="fs-5 text-primary mb-0">NFTs Minteados</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid mb-4" src="img/token circulo.png" style="height: 100px; width: 100px;">
+                    <h1 class="display-4" data-toggle="counter-up">2,100,000</h1>
+                    <p class="fs-5 text-primary mb-0">Primer Airdrop (Gratis!)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">¿Porque MITHR?</h1>
+                <p class="text-primary fs-5 mb-5">Te explicamos los benficios</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-7.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Fácil de Conseguir</h5>
+                            <span>Puedes conseguir MITHR de distintas formas, con distintos medios de pago, incluyendo la distribución gratis para poder generar adopción.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-6.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Seguro</h5>
+                            <span>El token como cualquier otro activo de Cardano se encuentra en la blockchain con todas las medidas de seguridad que ésto implica.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-5.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Intercambiable</h5>
+                            <span>Puedes intercambiar tokens por bienes y servicios, ya sean parte de Mithrandir o externos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-4.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Interconecta ecosistemas</h5>
+                            <span>Junto con Cardano, corremos en otras blockchains, como por ejemplo Polygon, creando asi interconexión entre redes.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-3.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">Crea valor</h5>
+                            <span>Con MITH, creamos valor y ayudamos al medioambiente generando recompensas por buenas acciones.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-start">
+                        <img class="img-fluid flex-shrink-0" src="img/icon-8.png" alt="">
+                        <div class="ps-4">
+                            <h5 class="mb-3">24/7</h5>
+                            <span>Puedes comprar, vender, intercambiar, regalar, donar, etc., en clualquier momento y lugar!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Service Start  -->
+    <div class="container-xxl bg-light py-5 my-5" id="team">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">El equipo de Mithrandir</h1>
+                <p class="text-primary fs-5 mb-5">Quienes formamos parte de Mithrandir</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/UlisesBarreiro.png" alt="Ulises Barreiro">
+                        <h5 class="mb-3">Ulises Barreiro<br>CEO & co-founder</h5>
+                        <p>Nació el 19 de diciembre de 1976, vivió en las ciudades de Río de Janeiro, San Carlos de Bariloche, y Buenos Aires 
+                            entre otras ciudades. Actualmente vive en la ciudad de La Cumbre, provincia de Córdoba, Argentina. Es un escritor, 
+                            historiador, y profesor de historia en escuelas secundarias, que desde hace unos años viene estudiando el sistema 
+                            de Finanzas Descentralizadas. Es Cofundador del proyecto Chacra Mithrandir, que actualmente está vigente y funcionando, 
+                            y que interactuará con el proyecto del Token MITHR (Mithrandir). </p>
+                        <a href="https://twitter.com/UlisesBarreiro1" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/DanielRodriguez.png" alt="Daniel Rodriguez">
+                        <h5 class="mb-3">Daniel Rodriguez<br>CTO & co-founder</h5>
+                        <p>Nació el 23 de Abril de 1974, en Rosario, Santa Fé. CTO en Mithrandir. Desarrollador blockchain, entusiasta crypto y del metaverso (específicamente de Cardano Network y ETH/Polygon) 
+                            y asesor de comunidades y DAOs. Inversor. Asesor financiero Crypto independiente en BuenBit.  
+                            Mas de 25 años de experiencia en IT con plena disposición y capacidad para la actualización de conocimientos.  
+                            Docencia en diversos institutos (Ej. EducacionIt.com), dictando cursos de Desarrollo y criptomonedas. Cofundador del proyecto Chacra Mithrandir.
+                            </p>
+                        <a href="https://www.linkedin.com/in/danielfeliperodriguez/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/DominiqueGromez.png" alt="Dominique Gromez">
+                        <h5 class="mb-3">Dominique Gromez<br>Género</h5>
+                        <p>Nació el 12 de marzo de 1986, en la ciudad de Buenos Aires, es Antropóloga, y docente. 
+                            Tiene dos postítulo en Género y Comunicación (Universidad de Buenos Aires), y otro postítulo en Educación 
+                            (Universidad Abierta Interamericana). Desde hace unos años viene trabajando sobre el ecosistema de las 
+                            Finanzas Descentralizadas y viene trabajando sobre la Perspectiva de Género en todos los ámbitos sociales, 
+                            dado que en el siglo XXI, ningún proyecto para que funcione puede prescindir de la perspectiva de género</p>
+                        <a href="https://www.linkedin.com/in/dominique-gromez-16a6bb48/?originalSubdomain=ar" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 800px">
+                        <img class="img-fluid mb-4" src="img/JorgeCordoba.jpg" alt="Jorge Córdoba">
+                        <h5 class="mb-3">Jorge Córdoba<br>Diseño gráfico</h5>
+                        <p>(Rosario, Santa Fe - 1970) Diseñador gráfico de oficio, especialista en Branding y Motion Graphics. 
+                            Actualmente dirige FilmRevenge, un pequeño estudio-agencia. La curiosidad por la literatura lo llevo a participar 
+                            en algunos proyectos editoriales, fue socio fundador de la Galería 1100, y ha trabajado para empresas y medios internacionales. 
+                            Aún no se reproduce, ni muere.
+                        </p>
+                        <a href="https://www.linkedin.com/in/corbi-post/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white p-5" style="height: 800px">
+                        <img class="img-fluid mb-4" src="img/AlbertoMedrano.png" alt="Alberto Medrano">
+                        <h5 class="mb-3">Alberto Medrano<br>Prensa</h5>
+                        <p>Tiene estudios en Ciencias de la Comunicación Social y Derecho. En los últimos años ha abordado la Comunicación Estratégica y Digital. 
+                            En el ámbito del Derecho ha profundizado investigación entorno al Derecho Informático. Vive en El Alto (La Paz) y apunta a la revolución 
+                            tecnológica en base al conocimiento y desarrollo de la ciencia.                           
+                            Especialista en prensa digital.</p>
+                        <a href="https://mobile.twitter.com/medranoprensa" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 800px">
+                        <img class="img-fluid mb-4" src="img/SebastianLabi.png" alt="Sebastián Labi">
+                        <h5 class="mb-3">Sebastián Labi<br>Ilustrador</h5>
+                        <p>ilustrador freelance desde el 2010. Hizo trabajos para distintas industrias, 
+                            como la editorial o la de video juegos. 
+                            Hizo video juegos para Nintendo o para estudios como Square Enix. 
+                            Desde 2015 da clases de ilustración, pintura, dibujo en su taller.
+                            <p>
+                            Instagram: @sebastianlabi
+                            Behance: https://www.behance.net/sebastianlabi
+                            </p>
+                        </p>
+                        <a href="https://www.linkedin.com/in/sebastian-labi-164b9933/?originalSubdomain=ar" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div>
+            <p>
+                <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"/>VOLUNTARIOS QUE PARTICIPARON DEL PROYECTO: </h3>
+                <p>
+                <br>
+                <b>Gabriel "Gabo" Boscan</b> (Diseñador gráfico), <b>Facundo Varela</b> (Dibujante), <b>Sheiber Emanuel Balladares Abarca</b> y <b>Maximiliano Murad</b> (Artista Plástico).
+                <br> <br> 
+                <i class="fa fa-arrow-right ms-2"></i> Gabriel Boscan hizo el logo y los primeros dibujos, <br>
+                <i class="fa fa-arrow-right ms-2"></i> Facundo Varela está haciendo dibujos para la colección Nº2 de NFT, <br>
+                <i class="fa fa-arrow-right ms-2"></i> Maximiliano Murad se comprometió a realizar unos dibujos para los NFT. <br>
+                <i class="fa fa-arrow-right ms-2"></i> Es escritor, eso le da un valor agregado lindo al equipo de trabajo.
+                </p>
+            </p>                
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Token Sale Start -->
+    <div class="container-xxl bg-light py-5 my-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Primer AirDrop de Tokens <br>
+                    y Venta de NFTs</h1>
+                <p class="text-primary fs-5 mb-5">Anotate en nuestra WhiteList</p>
+            </div>
+            <div class="row g-3">
+                <a class="btn btn-primary py-3 px-4" href="#tokensGratis">¡Anótame en la lista para recibir Token gratis!</a>                                                                               
+                <!-- <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0">10</h1>
+                        <span class="text-primary fs-5">Days</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0">5</h1>
+                        <span class="text-primary fs-5">Hours</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0">1</h1>
+                        <span class="text-primary fs-5">Minutes</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white text-center p-3">
+                        <h1 class="mb-0">0</h1>
+                        <span class="text-primary fs-5">Seconds</span>
+                    </div>
+                </div> -->
+                <div class="col-12 text-center py-4"></div>                                
+                <div class="col-12 text-center">
+                    <span>
+                        <h2>Para comprar NFT, visita la Pagina</h2>
+                        <br>                        
+                        <h3><a href="https://www.jpg.store/collection/token-mithrandir" target="_blank">jpg.store</a></h3> 
+                        <br>
+                        <p><b>Algunos ejemplos de nuestros NFTs</b></p>
+                    </span>
+                    <img class="img-fluid m-1" src="img/NFT nº24 .jpg" alt="NFT nº24 .jpg" style="width: 235px;">
+                    <img class="img-fluid m-1" src="img/1818.jpg" alt="" style="width: 200px;">
+                    <img class="img-fluid m-1" src="img/8.jpg" alt="" style="width: 240px;">
+                    <img class="img-fluid m-1" src="img/token circulo.png" alt="" style="width: 180px;">
+
+                <div class="col-12 text-center py-4"></div>     
+		<br>
+			<div class="col-12 text-center">
+			 <span>
+                	    <h3>Donaciones a $MITHR</h3>
+			            <p>Para poder avanzar y mejorar cada dia, necesitamos tu ayuda para conseguir recursos que apoyen al proyecto.
+                        <br> Si quieres donar, puedes enviar ADA a $MITHR o bien desde <a href="https://handle.me/mithr">https://handle.me/mithr</a>. <br> ¡MUCHAS GRACIAS!</p>
+			</span>
+				<img class="img-fluid m-1" src="img/MITHR_handle.png" alt="" style="width: 280px;">			
+	                </div>		
+                </div>		
+            </div>
+        </div>
+    </div>
+    <!-- Token Sale Start -->
+
+    <!-- Roadmap Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Roadmap</h1>
+                <p class="text-primary fs-5 mb-5">¿Cómo tenemos planeado el camino de vida para el Token con destino socio económico y ambiental?</p>
+            </div>
+            <div class="owl-carousel roadmap-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡MUY PRONTO!</span></div>
+                    <h5>Diciembre 2022</h5>
+                    <span>Primera Distribución del Token ya emitido, de forma gratuita, por sorteo y Pre-venta de NFTs.</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>Enero 2023</h5>
+                    <span>Segunda emisión de Tokens Cardano, por venta directa.</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>Febrero 2023</h5>
+                    <span>Tercera emision del token, y 1era emision de de Tokens en la red Polygon.</span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>Marzo 2023</h5>
+                    <span>Cuarta emisión y generación de Tokens y NFTs en otras cadenas de bloques. </span>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span></span></div>
+                    <h5>Junio 2023</h5>
+                    <span>Aplicaciones mobile y Web para control y reclamo automatico de recompensas.</span>
+                </div>               
+            </div>
+        </div>         
+    </div>
+    <!-- Roadmap End -->
+
+
+    <!-- Tokenomics  Start -->
+    <div class="container-xxl bg-light py-5 my-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">Tokenomics <br></h1>
+                <p class="text-primary fs-5 mb-5">420 millones de tokens MITHR serán distribuídos, destinados a una microeconomías regionales para un justo y eficiente sistema para todos.</p>
+            </div>                                                  
+            <div class="col-12 text-center">
+                <img class="img-fluid m-1" src="img/Tokenomics.png" alt="Tokenomics MITHR" >
+            </div>     		
+        </div>
+    </div>
+    <!-- Tokenomics END Start -->
+
+    <!-- Prensa -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">¿Qué estan diciendo de nosotros?</h1>
+                <p class="text-primary fs-5 mb-5">Acerca de Mithrandir en otros medios.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Algunas notas de Prensa
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="http://ar.globedia.com/informacion-ecosistema-cardano-disenado-instalado-token" target="_blank">Ver nota ></a> 1- http://ar.globedia.com/informacion-ecosistema-cardano-disenado-instalado-token <br>
+                                    <a href="http://ar.globedia.com/token-mithrandir-mithr-ayudara-forestacion-planeta" target="_blank">Ver nota ></a> 2- http://ar.globedia.com/token-mithrandir-mithr-ayudara-forestacion-planeta <br>
+                                    <a href="https://localidadmolinari.blogspot.com/2022/11/el-token-mithr-se-viene-con-todo-en.html" target="_blank">Ver nota ></a> 3- https://localidadmolinari.blogspot.com/2022/11/el-token-mithr-se-viene-con-todo-en.html  <br>
+                                    <a href="http://ar.globedia.com/paso-fase-creacion-logo-token-mithr-mithrandi" target="_blank">Ver nota ></a> 4- http://ar.globedia.com/paso-fase-creacion-logo-token-mithr-mithrandi <br>
+                                    <a href="http://ar.globedia.com/serie-nfts-token-mithr" target="_blank">Ver nota ></a> 5- http://ar.globedia.com/serie-nfts-token-mithr <br>
+                                    <a href="https://www.boliviatv.net/2022/11/informacion-sobre-el-ecosistema-de.html" target="_blank">Ver nota ></a> 6- https://www.boliviatv.net/2022/11/informacion-sobre-el-ecosistema-de.html <br>
+                                    <a href="https://abranpasoradio.com.ar/la-red-del-ecosistema-de-cardano-sigue-creciendo/" target="_blank">Ver nota ></a> 7- https://abranpasoradio.com.ar/la-red-del-ecosistema-de-cardano-sigue-creciendo/ <br>
+                                    <a href="http://ar.globedia.com/disponible-coleccion-nft-token-mithrandir?utm_source=Twitter" target="_blank">Ver nota ></a> 8- http://ar.globedia.com/disponible-coleccion-nft-token-mithrandir?utm_source=Twitter <br>
+                                    <a href="https://medium.com/@barreiroulises/ya-est%C3%A1-disponible-la-primera-colecci%C3%B3n-de-nft-del-token-mithrandir-5c27af9af5d4" target="_blank">Ver nota ></a> 9- https://medium.com/@barreiroulises/ya-esta-disponible-la-primera-coleccion-de-nft-del-token-mithrandir <br>
+                                    <a href="https://www.boliviatv.net/2022/12/ya-esta-disponible-la-primera-coleccion.html?m=1" target="_blank">Ver nota ></a>10- https://www.boliviatv.net/2022/12/ya-esta-disponible-la-primera-coleccion.html?m=1 <br>
+                                    <a href="https://abranpasoradio.com.ar/el-token-mithrandir-saco-una-coleccion-de-nft-que-son-un-exito-en-materia-de-venta/" target="_blank">Ver nota ></a>11- https://abranpasoradio.com.ar/el-token-mithrandir-saco-una-coleccion-de-nft-que-son-un-exito-en-materia-de-venta/ <br>                    
+				    <a href="https://publicagratis.es/economia/las-colecciones-de-los-nfts-son-un-exito-de-inversion" target="_blank">Ver nota ></a>12- https://publicagratis.es/economia/las-colecciones-de-los-nfts-son-un-exito-de-inversion <br>                    
+                                </div>
+                            </div>
+                        </div>
+			<div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Algunas notas/Entrevistas en Video
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="https://www.youtube.com/watch?v=b71I93HbJZc" target="_blank">Ver nota > </a>1- Latin stake Pool Cardano <br>         
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Prensa End -->
+
+    <!-- Quien nos visita 
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">¿Quién nos visita?</h1>
+                <p class="text-primary fs-5 mb-5">Te mostramos desde donde nos estan viendo</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								NO HAY CASO CHE....
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quien nos visita End -->
+
+    <!-- FAQs Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-6">FAQs</h1>
+                <p class="text-primary fs-5 mb-5">PREGUNTAS FRECUENTES <br>(Frequently Asked Questions)</p>                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Que es MITHR?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Es un Token que te recompensa por cuidar el planeta, que se encuentra emitido en la blockchain de Cardano, en primera instancia. Aunque en un futuro se despelgará en multiples blockchains.
+                                    En Mithrandir estamos convencidos de que la mejor manera de aportar valor es ayudando a cuidar el mediambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos con Token MITRH
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿A que esta destinado el Token?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    El Token MITHR es un activo destinado para ser usado con fines de concientización ambiental y respetando las leyes del mercado de oferta y demanda. Entendemos que quienes habitamos este planeta necesitamos activos financieros para poder cubrir nuestras necesidades básicas; por lo tanto, el token Mithrandir (MITHR) vendría a cubrir estas cuestiones, por un lado. Lo definimos como un token dado que se monta sobre un ecosistema ya existente, en este caso el de Cardano.1 Por el otro, está destinado a impulsar la reforestación del planeta, ya sea con plantas, árboles, arbustos, etc., todo tipo de especie vegetal, que dentro del ecosistema terrestre ayude dentro del proceso de fotosíntesis, a mejorar la calidad del oxígeno que se respira.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Porqué tendrá un uso socio económico?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    El Token MITHRANDIR (MITHR) puede suplementar las asignaciones universales económicas: Si los estados quisieran, por medio de este Token, se podría implementar un canal de ayuda económica a regiones semi rurales, o rurales, que estén relacionadas a la forestación o el cultivo de ciertas especies vegetales. Si bien es un token que no tendrá un respaldo financiero de fondo por cada acción digital (Token) que circule por el ecosistema de Cardano en blockchain, el valor del mismo será dado por múltiples cuestiones, entre ellas la ley simple de oferta y demanda del mismo. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    ¿Porqué tendrá un uso ambiental?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Dándole un uso a los Smart contracts, y en este caso al token MITHR, que aliviaría las cargas monetarias de los estados, pasando a ser un sistema de asignación de subvenciones por forestar o reproducir ciertas especies vegetales. Dado, que los token, son herramientas útiles, cuando se producen distorsiones en la macro-economía.1 Especialmente para los sujetos productores de plantas, o actividades a fines a esta.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Cuantos Tokens se emitirán?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Se emitirán 420 millones de Tokens, a ser distribuidos de diferentes formas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    ¿Como se repartirán los tokens?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Entendiendo que sobre un 100% se darán (25% desarrollo incluyendo un 5% por tramos, 25% tesoro): 50% recompensas de la plataforma, 10% Airdrops, 5% sorteos, 35% recompensas por utilizar los servicios de los espacios adheridos.
+                                </div>
+                            </div>
+                        </div>              
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    ¿Que Información sobre el ecosistema de Cardano puedo ver, donde esta diseñado e instalado el Token?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    ¿Qué es Cardano? Cardano es una cadena de bloques descentralizada de tercera generación que utiliza un mecanismo de consenso de proof of stake y tiene una funcionalidad de contratos inteligentes para ejecutar aplicaciones descentralizadas. Fundada por Charles Hoskinson, es una de las principales redes de su tipo que se ha desarrollado a través de una investigación revisada por pares de varios años, dado que antiguamente había estado en la experiencia positiva de haber sido parte de los fundadores de Ether (Etherium), llevando lo que sirvió de ese proyecto, más lo nuevo a mejorar nace Cardano. Su principal activo financiero es ADA, ADA es el token nativo de la plataforma de blockchain Cardano al igual que MITHR, ADA se encuentra entre las principales criptodivisas por capitalización de mercado, además de ser uno de los ecosistemas descentralizados de mayor uso en la actualidad. Es uno de los activos digitales más populares que los criptoinversores incluyen en sus carteras de resguardo financiero, gracias a su potencial para inmensas aplicaciones en el mundo real. Además el ecosistema desde que entro en vigencia nunca se cayó, a diferencias de otros ecosistemas financieros descentralizados que presentan fallas constantes. Una de Las visión de Cardano a largo plazo es impulsar las aplicaciones en el mundo real de la tecnología blockchain y volverla más segura, escalable y sostenible para permitir un futuro descentralizado en finanzas. Su equipo pretende conseguirlo mediante pruebas e investigaciones minuciosas antes de lanzar funciones adicionales a la cadena de bloques. Además de mesclar el mundo académico de las investigaciones, en conjunto de las actividades financieras y económicas. Para asegurar, que nunca un grupo de personas tomen decisiones y se puedan equivocar, así se diseño un sistema donde en el trabajo sobre el ecosistema de Cardano participan tres socios claves: IOHK, Cardano Foundation y EMURGO, tres empresas con personal muy capacitado y confiable al respecto. Por eso decidimos sacar este Token por la plataforma de Cardano. Pero conozcamos un poco más quienes son estas tres empresas que toman las desiciones macro en el ecosistema de Cardano, que ellas son IOHK, CARDANO FUNDATION y EMURGO. <br>
+                                    ➢ IOHK: Input Output Hong Kong es una empresa tecnológica cofundada por el creador de Cardano, Hoskinson, junto con Jeremy Wood. La empresa es responsable del desarrollo técnico de la blockchain de Cardano, que diseña, amplía y mantiene. Además de ir apoyando iniciativas por diversos países, para programadores, que se quieran especializar en el ecosistema de Cardano. <br>
+                                    ➢ Cardano Foundation: La fundación Cardano es un organismo independiente que se encarga de supervisar la adopción de la tecnología de Cardano a través de sus diversas asociaciones. También es responsable de fomentar el compromiso dentro de la comunidad de Cardano y de coordinarse con las industrias para aumentar el conocimiento del potencial de esta tecnología descentralizada. Creando comunidades, charlas y demás cuestiones para poder implementar una educación en tecnología blockchain, en el uso de Cardano. <br>
+                                    ➢ EMURGO: Esta empresa es uno de los miembros fundadores de Cardano, y trabaja para desarrollar, respaldar e incubar aplicaciones para el ecosistema de la cadena de bloques. También explora casos de uso comerciales para Cardano y atrae a empresas al potencial de su blockchain. Es una de las mayores empresas en su rubro. <br>
+                                    Por eso creemos los creadores del Token MITHR, que el ecosistema Cardano, es uno de los mejores del mercado para poder sacra, desarrollar y hacer crecer este Token. <br>
+                                </div>
+                            </div>
+                        </div>                                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h1 class="text-primary mb-4"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 45px;">Donaciones a $MITHR</h1>
+                    <span>El Token con destino socio económico y ambiental, que genera recompensas por hacer buenas acciones en nuestro planeta, mejorando la economía y el medioambiente.
+			  Si quieres donar, puedes enviar ADA a $MITHR o bien desde <a href="https://handle.me/mithr">https://handle.me/mithr</a>.  ¡MUCHAS GRACIAS!</span>
+                </div>
+
+                
+                <!-- ******************  WHITE LIST FORM *********************** -->
+                <div class="col-md-6">
+                    <h5 class="mb-4" ID="tokensGratis">¿Quieres Tokens gratis?</h5>
+                    <p>¡Sumate a nuestra WhiteList, déjanos tu email y anotamos en la lista para recibir los primero Tokens pre-venta totalmente gratis!</p>
+                    <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                        <div class="position-relative">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu email" name="email" class="form-control" placeholder="Email" required>
+                            <button type="submit" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Anótame</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- ******************  END WHITE LIST FORM *********************** -->
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">¡Contáctanos!</h5>                    
+                    <!-- <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p> -->
+                    <p><i class="fa fa-envelope me-3"></i>info@Mithr.io</p>                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4"></h5>
+                    <!-- <a class="btn btn-link" href=""></a>
+                    <a class="btn btn-link" href=""></a>
+                    <a class="btn btn-link" href=""></a>                     -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Links</h5>
+                    <a class="btn btn-link" href="https://chacramithrandir.com.ar/" target="_blank">Chacra Mithrandir</a>
+                    <a class="btn btn-link" href="https://breakpoint341.com/" target="_blank">Breakpoint 341 LLC</a>    
+                    <a class="btn btn-link" href="https://linktr.ee/breakpoint341" target="_blank">Breakpoint Linktr.ee</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Síguenos</h5>
+                    <div class="d-flex">                        
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.facebook.com/profile.php?id=100088311543998" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://twitter.com/Tokenmithr" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.youtube.com/@chacramithrandir2189" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://t.me/+JkZmBpevDvVlNjlh" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Mithrandir</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">                        
+                        Designed By <a href="https://breakpoint341.com">Breakpoint 341 LLC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
