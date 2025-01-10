@@ -43,18 +43,18 @@ if ($Email == "") $ValidationOk=false;
 	$Body_User.="\n";
 
 	//sending the email now
-	$success=mail($EmailTo, $Email . $Subject, $Body,"From: <$EmailFrom>");
-	$success_dos=mail($Email, $SubjectUser, $Body_User,"From: <$EmailFrom>");
+	//$success=mail($EmailTo, $Email . $Subject, $Body,"From: <$EmailFrom>");
+	//$success_dos=mail($Email, $SubjectUser, $Body_User,"From: <$EmailFrom>");
 
 	//redirect after mail send 
-	if ($success) {
+	//if ($success) {
  
        print "<meta http-equiv=\"refresh\" content=\"0;URL=send_voluntario.html\">";
 
-	}
-	else {
+	//}
+	//else {
 
-		print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+	//	print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
 
-	}
+	//}
 ?>

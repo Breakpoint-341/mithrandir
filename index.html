@@ -29,6 +29,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- https://app.dexhunter.io/partners -->
+    <script src="https://unpkg.com/react@18.2/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18.2/umd/react-dom.production.min.js" crossorigin></script>
+    <script type="module" src="https://unpkg.com/@dexhunterio/swaps@0.0.80/lib/umd/swaps.umd.js"></script>
 </head>
 
 <body>
@@ -58,6 +63,7 @@
                 <a href="https://www.mithr.io/opinion"  class="nav-item nav-link">Opinión</a> 
                 <a href="noticias.html"  class="nav-item nav-link">Noticias</a> 
                 <a href="#faqs"  class="nav-item nav-link">FAQs</a>                 
+                <a href="amon.html" class="nav-item nav-link">Amón-Rá</a>                 
                 <a href="whitepaper/WhitePaperMITHR.pdf" class="nav-item nav-link active">White Paper</a> 
                 <a href="#" class="nav-item nav-link"><div id="root"></div></a> <!-- Aca va el boton "DONAR" de Reactjs -->
             </div>
@@ -66,7 +72,8 @@
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://twitter.com/Tokenmithr" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.youtube.com/@chacramithrandir2189" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://t.me/+JkZmBpevDvVlNjlh" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>  
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>                  
+                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://linktr.ee/tokenmithr" target="_blank"><img src="img/icons8-linktree-48.png" style="width: 20px; height: 20px;"></a>    
             </div>
         </div>
     </nav>
@@ -74,42 +81,117 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid hero-header bg-light py-5 mb-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
+    <div class="container-fluid hero-header bg-light py-5 mb-5">        
+        <div class="container py-2">            
+            
+            <div class="row g-5 align-items-center">                
+                
+                <div class="col-lg-9">
                     <h1 class="display-4 mb-3 animated slideInDown">MITHR, El Token que te recompensa por cuidar el ecosistema.</h1>
                     <p class="animated slideInDown">Te recompensamos por cuidar el planeta. En Mithrandir estamos convencidos de que la mejor manera
-                        de aportar valor es ayudando a cuidar el mediambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos 
+                        de aportar valor es ayudando a cuidar el medioambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos 
                         con Token MITHR</p>
-                        <p style="color: rgb(155, 128, 39);">¡MITHR TOKEN Tiene utilidad real! Puedes intercambiarlo por noches 
+                        <p style="color: rgb(155, 128, 39);">¡MITHR TOKEN Tiene utilidad real! ¡Puedes intercambiarlo por noches 
                             de <a href="https://www.instagram.com/chacramithrandir/?hl=es-la" target="_blank">alojamiento en cabañas sustentables</a>, Comprar servicios, 
                             cambiarlos por Libros/eBooks en editorial 
-                            <a href="https://www.editorialimaginante.com/" target="_blank">Imaginante</a>, tradearlo en <a href="https://app.minswap.org/swap" target="_blank">MinSwap</a>, y mucho mas!</p>
-
-                        <div> 
-                            <!-- anterior https://pool.pm/asset1dqesy9s4hf7z2wdf5tqftlg7mr8futphr6frxz -->
-                            <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;">
-                                <a href="https://pool.pm/asset1r9yw7eeu78htfgx304rj4jgesxkrf5hlf247lz" target="_blank">Ver Token MITHR en Pool.pm</a>                                 
-                            </h3>                            
-                            <p><b>PolicyID:</b> <span style="color: blue;">65bdf33f8f7fd4debeb2ad659473749eb4eac177e06650bb75a8fe50</span></p>
-                        </div>                                                               
-                        <br><br><br>
-                        <p>Te contamos acerca de Mithrandir y la Responsabilidad Social Empresarial</p>
-                        <div> 
-                            <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"><a href="rse.html" >Responsabilidad Social Empresarial</a> </h3>                            
-                        </div>                                                               
+                            <a href="https://www.editorialimaginante.com/" target="_blank">Imaginante</a>, tradearlo en <a href="https://app.minswap.org/swap" target="_blank">MinSwap</a>, y mucho más!</p>
                 </div>
-                <div class="col-lg-6 animated fadeIn">
-                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/hero-1.png" alt="MITHR TOKEN" width="600px">
+
+                <div class="col-lg-3">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/hero-1_small.jpg" alt="MITHR TOKEN" width="350px">
                 </div>
             </div>
+            <br>       <br>           
+            <div class="row g-5 align-items-center">                       
+               
+                <div class="col-lg-4 animated fadeIn">                              
+                    <div id="dexhunter-root"></div>
+                    <script type="module">
+                        ReactDOM.render(
+                            React.createElement(
+                                dexhunterSwap, 
+                                {"orderTypes":["SWAP","LIMIT"],"defaultToken":"65bdf33f8f7fd4debeb2ad659473749eb4eac177e06650bb75a8fe504d69746872546f6b656e","supportedTokens":["65bdf33f8f7fd4debeb2ad659473749eb4eac177e06650bb75a8fe504d69746872546f6b656e","8db269c3ec630e06ae29f74bc39edd1f87c819f1056206e879a1cd61446a65644d6963726f555344","25c5de5f5b286073c593edfd77b48abc7a48e5a4f3d4cd9d428ff93555534454","25c5de5f5b286073c593edfd77b48abc7a48e5a4f3d4cd9d428ff93555534443"],"colors":{"background":"#0E0F12","containers":"#191B23","subText":"#88919E","mainText":"#FFFFFF","buttonText":"#FFFFFF","accent":"#007DFF"},"theme":"dark","width":350,"partnerCode":"mithrandirtoken61646472317179306c7272793279756c757639766b3778357161763077786468307935356a716e6b3739686e68766e6b796365747938716776736e6d67647279647368356734613373717238367737746a7a303735366639636837736835397873787168676a6bda39a3ee5e6b4b0d3255bfef95601890afd80709","partnerName":"MITHRANDIRTOKEN"}
+                            ),
+                            document.getElementById('dexhunter-root')
+                        );
+                    </script>                
+                  
+                    <!-- <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="img/farming_staking_esp_small.jpg" alt="FRAMING & STAKING MITHR TOKEN" width="350px">                                        -->
+                </div>
+
+                <div class="col-lg-1">&nbsp;</div>
+                <div class="col-lg-7">             
+                    
+                    <div> 
+                        <!-- anterior https://pool.pm/asset1dqesy9s4hf7z2wdf5tqftlg7mr8futphr6frxz -->
+                        <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;">
+                            <a href="https://pool.pm/asset1r9yw7eeu78htfgx304rj4jgesxkrf5hlf247lz" target="_blank">¡PUEDES COMPRAR NUESTRO TOKEN MITHR!</a>                                 
+                        </h3>                            
+                        <p><b>
+                            La revolución de las criptomonedas ha llegado, y tú no quieres perderte la oportunidad de ser parte de ella. </b> 
+                            <br><br>
+                            ⬅ Nos emociona anunciarte que ahora puedes adquirir nuestros tokens "Mithr" de manera fácil y segura directamente desde nuestra página oficial. 
+                            ¿Cómo? Gracias a nuestra colaboración con el renombrado partner "DexHunter". <br><br>
+                            ¡Es el momento perfecto para sumergirte en el emocionante mundo de Mithr! <br>
+                            ¡No esperes más y haz que tus criptomonedas trabajen para ti! 
+                            <br>
+                            <br>
+                        </p>
+                    </div>     
+                                        
+                    <div> 
+                        <!-- anterior https://pool.pm/asset1dqesy9s4hf7z2wdf5tqftlg7mr8futphr6frxz -->
+                        <h3 class="m-0 text-primary"><!-- <img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"> -->
+                            <a href="https://pool.pm/asset1r9yw7eeu78htfgx304rj4jgesxkrf5hlf247lz" target="_blank">Ver Token MITHR en Pool.pm</a>                                 
+                        </h3>                            
+                        <p><b>PolicyID:</b> <span style="color: blue;">65bdf33f8f7fd4debeb2ad659473749eb4eac177e06650bb75a8fe50</span></p>
+                    </div>                                                               
+                    
+                    <!-- <div> 
+                        <h3 class="m-0 text-primary">                           
+                            <a href="https://app.tangent.art/" target="_blank">¡Puedes hacer FARMING y STAKING de tus Tokens!</a> 
+                            <img class="img-fluid me-2" src="img/TANG.jpg" alt="" style="width: 40px;">                   
+                        </h3>                            
+                    </div>                                                               
+                    <p>Puedes poner a rendir tus Tokens, con el protocolo de Tangent. Click <a href="https://app.tangent.art/" target="_blank">AQUI</a> </p> -->
+                                        
+                    <div> 
+                        <h3 class="m-0 text-primary"><!-- <img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;">-->
+                            <a href="rse.html" >Responsabilidad Social Empresarial</a> 
+                        </h3>                            
+                    </div>                                                               
+                    <p>Te contamos acerca de Mithrandir y la Responsabilidad Social Empresarial</p>
+                </div>               
+               
+            </div>
+
         </div>
         <span id="mision"></span>
     </div>
     <!-- Header End -->
 
-
+    <!-- About Metaverso  -->
+    <!-- <div class="container-xxl py-12" id="metaverso">
+        <div class="container">
+            <div class="row g-12 align-items-baseline">  
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100" >
+                        <h1 class="display-6">METAVERSO de MITHR</h1>
+                        <p class="text-primary fs-5 mb-4">¡Integrate a nuestro metaverso!</p>
+                        <iframe width="100%" height="600" 
+                                src="https://www.spatial.io/s/Breakpoints-Home-62c4b30a8554cd000104ecfb?share=3806640338749917727" 
+                                title="Metaverso de MITHR" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- About Metaverso -->
+   
     <!-- About Start -->
     <div class="container-xxl py-5" id="mision">
         <div class="container">
@@ -134,7 +216,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100" >
                         <h1 class="display-6">¿Cual es nuestra misión?</h1>
-                        <p class="text-primary fs-5 mb-4">Somos una platforma encargada de cuidar el ecosistema terrestre, el medio ambiente consideramos que es vital para la existencia humana.</p>
+                        <p class="text-primary fs-5 mb-4">Somos una plataforma encargada de cuidar el ecosistema terrestre, y consideramos que el medio ambiente es vital para la existencia humana.</p>
                         <p>
                             Nuestra misión mediante la creación de este proyecto denominado Mithhrandir es entre varias cuestiones reconocer 
                             y valorar el trabajo y los recursos no pagados (o mal pagados) que los sujetos que se dedican a realizar estas tareas 
@@ -188,13 +270,13 @@
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
                     <img class="img-fluid mb-4" src="img/NFT nº24 .jpg" style="height: 100px; width: 100px;">
-                    <h1 class="display-4" data-toggle="counter-up">570</h1>
+                    <h1 class="display-4" data-toggle="counter-up">7800</h1>
                     <p class="fs-5 text-primary mb-0">NFTs Minteados</p>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
                     <img class="img-fluid mb-4" src="img/token circulo.png" style="height: 100px; width: 100px;">
-                    <h1 class="display-4" data-toggle="counter-up">2,100,000</h1>
-                    <p class="fs-5 text-primary mb-0">Primer Airdrop (Gratis!)</p>
+                    <h1 class="display-4" data-toggle="counter-up">29,390,000</h1>
+                    <p class="fs-5 text-primary mb-0">Total Circulante Actual</p>
                 </div>
             </div>
         </div>
@@ -207,7 +289,7 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-6">¿Porque MITHR?</h1>
-                <p class="text-primary fs-5 mb-5">Te explicamos los benficios</p>
+                <p class="text-primary fs-5 mb-5">Te explicamos los beneficios</p>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -242,7 +324,7 @@
                         <img class="img-fluid flex-shrink-0" src="img/icon-4.png" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">Interconecta ecosistemas</h5>
-                            <span>Junto con Cardano, corremos en otras blockchains, como por ejemplo Polygon, creando asi interconexión entre redes.</span>
+                            <span>Junto con Cardano, correremos a futuro en otras blockchains (TBD), creando así interconexión entre redes.</span>
                         </div>
                     </div>
                 </div>
@@ -260,7 +342,7 @@
                         <img class="img-fluid flex-shrink-0" src="img/icon-8.png" alt="">
                         <div class="ps-4">
                             <h5 class="mb-3">24/7</h5>
-                            <span>Puedes comprar, vender, intercambiar, regalar, donar, etc., en clualquier momento y lugar!</span>
+                            <span>Puedes comprar, vender, intercambiar, regalar, donar, etc., en cualquier momento y lugar!</span>
                         </div>
                     </div>
                 </div>
@@ -279,6 +361,7 @@
                 <p class="text-primary fs-5 mb-5">Quienes formamos parte de Mithrandir</p>
             </div>
             <div class="row g-4">
+                <!-- ************************************************************************************************************************************************************************* -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/UlisesBarreiro.png" alt="Ulises Barreiro">
@@ -296,7 +379,7 @@
                     <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/DanielWeb3Rodriguez.png" alt="Daniel Web3 Rodriguez">
                         <h5 class="mb-3">Daniel "Web3" Rodriguez<br>CTO & co-founder</h5>
-                        <p>Rosarino, CTO /  CEO / Co-founder en Mithrandir. Desarrollador blockchain, entusiasta crypto y del metaverso (específicamente de Cardano Network y ETH/Polygon) 
+                        <p>Rosarino, CTO /  CEO / Co-founder en Mithrandir. Desarrollador blockchain, entusiasta crypto y del metaverso (específicamente de Cardano Network y ETH) 
                             y asesor de comunidades y DAOs. Inversor. Asesor financiero Crypto independiente en BuenBit.  
                             Mas de 25 años de experiencia en IT con plena disposición y capacidad para la actualización de conocimientos.  
                             Docencia en diversos institutos (Ej. EducacionIt.com), dictando cursos de Desarrollo y criptomonedas. Cofundador del proyecto Chacra Mithrandir.
@@ -316,6 +399,7 @@
                         <a href="https://www.linkedin.com/in/dominique-gromez-16a6bb48/?originalSubdomain=ar" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
+                <!-- ************************************************************************************************************************************************************************* -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5" style="height: 800px">
                         <img class="img-fluid mb-4" src="img/team/JorgeCordoba.png" alt="Jorge Córdoba">
@@ -355,18 +439,30 @@
                         <a href="https://www.linkedin.com/in/sebastian-labi-164b9933/?originalSubdomain=ar" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-                
+                <!-- ************************************************************************************************************************************************************************* -->
+               
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5" style="height: 950px">
-                        <img class="img-fluid mb-4" src="img/team/AndresAndrek.png" alt="Andres Andrek">
-                        <h5 class="mb-3">Andres Andrek<br>Desarrollador Departamento Web 3.0</h5>
-                        <p> Andrés Andrek, nació el 18 de agosto de 1988, en Maria Juana, Provincia de Santa Fe, Argentina. <br><br>
-                            Tiene 34 años se autopersive abibliofobico, paseador de perros y fanático de Cardano. <br><br>
-                            Trabaja de programador en el Departamento de web 3.0 de Token Mithrandir. <br><br>
-                            Además es  parte del equipo de Forestación en diferentes provincias. </p>
-                        <a href="https://www.instagram.com/andresandrek/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    <div class="service-item bg-white p-5" style="height: 940px">
+                        <img class="img-fluid mb-4" src="img/team/Lucas.png" alt="Lucas Emmanuel Cariddi">
+                        <h5 class="mb-3">Lucas Emmanuel Cariddi<br>Community Manager</h5>
+                        <p>Licenciado en Gestión Ambiental y Community Manager. Trabajo en distintas ONGs como el Instituto Jane Goodall Argentina y Asociación Sustentar. 
+                            Se desempeño como Community Manager para distintas empresas en Argentina, Colombia, EE.UU. y Portugal. Actualmente se encuentra desarrollándose 
+                            en el sector Crypto y Web3 creando, gestionando e impulsando comunidades.</p>
+                        <a href="https://www.linkedin.com/in/lucas-emmanuel-cariddi/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 940px">
+                        <img class="img-fluid mb-4" src="img/team/JoseIadiccico.jpg" alt="José Iadicicco">
+                        <h5 class="mb-3">José Iadicicco<br></h5>
+                        <p>Vive actualmente en la Ciudad Autónoma de Buenos Aires, en Argentina. Nació el 9 de febrero de 1980. 
+                            Actualmente está ligado a diversas tareas educativas de varios proyectos del ecosistema de CARDANO. 
+                            Además es CEO de la empresa ADA Solar que trabaja en conjunto con Token Mithrandir en varios temas educativos y de adopción del mundo de las Finanzas Descentralizadas. 
+                            En el Proyecto Token Mithrandir es parte del cuerpo directivo que planifica las tareas educativas que venimos realizando en conjunto con varios proyectos asociados 
+                            dentro del proyecto educativo Amón-Rá.</p>
+                        <a href="https://www.linkedin.com/in/joseiadicicco/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>                
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/JaimeCastro.jpg" alt="Jaime Andrés Posada Castro">
@@ -379,6 +475,80 @@
                         <a href="https://www.linkedin.com/in/jaime-andr%C3%A9s-posada-castro/" target="_blank">LinkedIn <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
+                <!-- ************************************************************************************************************************************************************************* -->               
+                 <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/SofiaViallareal.jpg" alt="Sofia Viallareal">
+                        <h5 class="mb-3">Sofía Villarreal<br>Visual Designer</h5>
+                        <p> Arquitecta mexicana. Diseñadora visual autodidacta. 6 años de experiencia en diseño urbano y  planeación de ciudades, 
+                            8 años en creación audiovisual. Practica el urbanismo, comprende el papel de las ciudades para reducir 
+                            efectos del impacto ambiental, y el poder para la regeneración; promueve implementación de sistemas de 
+                            infraestructura verde, proyectos relacionados con sostenibilidad ambiental y social, e Investigación y periodismo urbano en México y Alemania. 
+                            Enamorada de su cultura y su país: sus colores, pueblos, paisajes y música. </p>
+                        <a href="https://www.linkedin.com/in/sofia-villarreal-c/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>                  
+                    </div>
+                </div>                -->
+                 <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 940px">
+                        <img class="img-fluid mb-4" src="img/team/Ian.png" alt="Ian Lucas Pontoriero">
+                        <h5 class="mb-3">Ian Lucas Pontoriero<br>Community Manager</h5>
+                        <p>21 años. Redactor deportivo en varios medios. Narrador deportivo. Estudiante de Ciencias de la Comunicación Social 
+                            y de Publicidad & Community Management. Apasionado de la comunicación, con especial interés en el periodismo, la
+                             publicidad, las redes sociales y los medios digitales.</p>
+                        <a href="https://www.linkedin.com/in/ian-lucas-pontoriero/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>                 -->
+                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/juampi.jpg" alt="Juanpi Alegre Román">
+                        <h5 class="mb-3">Juan Pablo Alegre Román<br>Desarrollador Web & Mobile</h5>
+                        <p>Nació el 11 de Abril de 1988 en Buenos Aires, Argentina. Se formó como docente y Licenciado en Educación, trabajó muchos años en el área y posteriormente se vió 
+                            atraído por el mundo de la programación y la tecnología. <br><br>
+                            Es fundador de Educación en Acción y actualmente trabaja como programador web y mobile. Amante y entusiasta 
+                            con respecto a las posibilidades que ofrece la Web3 y la integración de inteligencia artificial en el desarrollo de aplicaciones. <br><br>
+                            Se encuentra en camino a certificarse como Ingeniero de IA.
+                        </p>
+                        <a href="https://www.linkedin.com/in/juanalegreroman/" target="_blank">Mas Info<i class="fa fa-arrow-right ms-2"></i></a>                        
+                    </div>
+                </div>                 -->
+                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/Jean.png" alt="Jean Carlos Aguilar">
+                        <h5 class="mb-3">Jean Carlos Aguilar<br>Embajador</h5>
+                        <p> Nació en la ciudad de Caracas el 20 de septiembre de 1980, trabaja desde hace dos años en varios proyectos que se desarrollan por dentro de CARDANO. 
+                            Uno de ellos es Fundación Funintec, una casa de estudios con sede en Venezuela, además dentro del proyecto Token MITHR está dentro del Departamento de Educación financiera.
+                            Se auto define como un CARDANO entusiasta. 
+                            Tiene un profundo interés en la tecnología y el área blockchain. Apasionado por el aprendizaje y el mejoramiento continúo</p>
+                        <a href="https://www.linkedin.com/in/jean-carlos-%E2%82%B3guilar-39a278240/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>               -->    
+                 <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/EnrikeBNB.jpg" alt="Jean Carlos Aguilar">
+                        <h5 class="mb-3">Enrique Delgado<br>Community Builder</h5>
+                        <p>
+                            Community Builder de Token MITHR, egresado en el área de Negocios Internacionales y 
+                            Marketing Digital. Asesora a emprendedores y proyectos en el area de negocios y marketing. Estudiante de 
+                            4to año de Arquitectura y Obras civiles. Promueve el uso de materiales de bajo impacto ambiental proyectando actualmente su profesión hacia la web3, 
+                            apoyando proyectos, creando comunidades, siendo Host de eventos, impulsando temas por medio de creación de contenido (Economía Circular, ReFi, DeFi y 
+                            Marketing como modelos para minimizar el impacto ambiental).
+                        </p>
+                        <a href="https://www.linkedin.com/in/enrique-delgado-projectsweb3/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>                 
+                    </div>
+                </div>          -->                          
+                <!-- ************************************************************************************************************************************************************************* -->                 
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/Giancarlos.jpg.png" alt="Giancarlos Yañez">
+                        <h5 class="mb-3">Giancarlos Yañez<br>Artista NFT</h5>
+                        <p> De Perú, dibujante y Músico. Creación de imágenes con IA, 
+                            compartiendolas en la blockchain de Cardano y Tezos. 
+                            Experimentación con prompts expresando ideas de manera única, influenciado por películas de terror y zombies.                            
+                            Piensa dar su grano de arena para hacer nuestro hogar un lugar mejor, y así conoció al proyecto MITHR, 
+                            y estoy muy contento de participar y conocer personas hermosas que comparten esta visión.</p>
+                        <a href="https://twitter.com/ProgalabasNFT" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>                
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/MaximoRodrigue.png" alt="Máximo Rodrigué">
@@ -388,24 +558,22 @@
                         </p>
                         <a href="" target="_blank">Mas Info<i class="fa fa-arrow-right ms-2"></i></a>                        
                     </div>
-                </div>                
-               
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white p-5" style="height: 700px">
-                        <img class="img-fluid mb-4" src="img/team/Carmen.jpg" alt="Carmen Galbán">
-                        <h5 class="mb-3">Carmen Galbán<br>Gestión de Calidad</h5>
+                </div>         
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/LeandroVentura.jpg" alt="Leandro Ventura">
+                        <h5 class="mb-3">Leandro Ventura<br>Abogado y Docente</h5>
                         <p>
-                            Ingeniera Carmen Galbán especialista en sistemas de gestión de calidad, medio ambiente, seguridad y salud laboral, 
-                            coordinadora Token MITHR Venezuela. Educación Ambiental y Finanzas Descentralizadas en el sector 
-                            educativo y no limitativo. Madre de 4 hermosos hijos, vive en Cabimas, Zulia, 
-                            República Bolivariana de Venezuela. 
-                            Coordinadora en proyectos de impacto ambiental y social destinados a trabajos en establecimientos educativos. 
-                        </p><br>
-                        <a href="https://twitter.com/BaudouinMuv" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                            Abogado, y docente que trabaja como voluntario de Token Mithrandir en diversos espacios como en el de asesoría legal, 
+                            en el proyecto educativo Amón-Rá, en el Departamento de NFTs, y en diversas tareas internas de control de gestión. 
+                            Actualmente vive en Argentina.                             
+                        </p>
+                        <!-- <a href="" target="_blank">Mas Info<i class="fa fa-arrow-right ms-2"></i></a>                         -->
                     </div>
-                </div>       
+                </div>                         
+                <!-- ************************************************************************************************************************************************************************* -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white p-5" style="height: 700px">
+                    <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/AugustinBaudouin.png" alt="Augustin Baudouin">
                         <h5 class="mb-3">Augustin Baudouin<br>Prensa y Difusión</h5>
                         <p>Baudouin trabaja en varios proyectos que funcionan dentro del ecosistema de Cardano, 
@@ -415,7 +583,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5" style="height: 700px">
+                    <div class="service-item bg-white p-5" style="height: 950px">
                         <img class="img-fluid mb-4" src="img/team/BoazBandu.png" alt="Boaz Bandu">
                         <h5 class="mb-3">Boaz Bandu<br>Prensa y Difusión</h5>
                         <p>Boaz trabaja en varios proyectos que se desarrollan dentro del ecositema de Cardano, 
@@ -425,116 +593,382 @@
                         <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5" style="height: 850px">
-                        <img class="img-fluid mb-4" src="img/team/Ian.png" alt="Ian Lucas Pontoriero">
-                        <h5 class="mb-3">Ian Lucas Pontoriero<br>Community Manager</h5>
-                        <p>21 años. Redactor deportivo en varios medios. Narrador deportivo. Estudiante de Ciencias de la Comunicación Social 
-                            y de Publicidad & Community Management. Apasionado de la comunicación, con especial interés en el periodismo, la
-                             publicidad, las redes sociales y los medios digitales.</p>
-                        <a href="https://www.linkedin.com/in/ian-lucas-pontoriero/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/IliasEspinosa.jpg" alt="Ilias Espinosa">
+                        <h5 class="mb-3">Ilias Espinosa<br>Impacto Ambiental</h5>
+                        <p>Especialista en cuestiones de impacto ambiental, y coordinador del territorio del Valle de Punilla (Córdoba - Argentina). Es un especialista en paisajismo y fauna y flora de la provincia de Córdoba. </p>
+                        <!-- <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a> -->
                     </div>
-                </div>
-                
+                </div>                
+                <!-- ************************************************************************************************************************************************************************* -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5" style="height: 850px">
-                        <img class="img-fluid mb-4" src="img/team/Lucas.png" alt="Lucas Emmanuel Cariddi">
-                        <h5 class="mb-3">Lucas Emmanuel Cariddi<br>Community Manager</h5>
-                        <p>Licenciado en Gestión Ambiental y Community Manager. Trabajo en distintas ONGs como el Instituto Jane Goodall Argentina y Asociación Sustentar. 
-                            Se desempeño como Community Manager para distintas empresas en Argentina, Colombia, EE.UU. y Portugal. Actualmente se encuentra desarrollándose 
-                            en el sector Crypto y Web3 creando, gestionando e impulsando comunidades.</p>
-                        <a href="https://www.linkedin.com/in/lucas-emmanuel-cariddi/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/JuanSaenzValiente.webp" alt="Juan Saenz Valiente">
+                        <h5 class="mb-3">Juan Saenz Valiente<br>Animador</h5>
+                        <p>
+                            De Buenos Aires, Argentina; nació en octubre de 1981, también conocido como Juanungo es un animador, productor, 
+                            guionista y dibujante de historietas argentino. 
+                            Es autor de libros de historietas como La Sudestada o Sarna. Fue un miembro fundador de la organización Banda Dibujada. 
+                            Ganó cuatro Premios Carlos Trillo, cuatro Premios Banda Dibujada y un premio ALIJA por sus obras Cobalto 
+                            (con guión de Pablo De Santis), La Sudestada y Norton Gutiérrez y el Collar de Emma Tzampak. 
+                            Su historieta El Hipnotizador (con guion de Pablo De Santis) fue adaptada a una producción homónima de HBO Latinoamérica 
+                            protagonizada por Leonardo Sbaraglia. 
+                            Publicó historietas en las revistas Orsai, Fierro, Suda Mery K y Lule Le Lele, entre otras. 
+                            Es voluntario del equipo de NFTs y donó sus imágenes para MITHR.                             
+                        </p>
+                        <!-- <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a> -->
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white p-5" style="height: 850px">
-                        <img class="img-fluid mb-4" src="img/team/Vivi.png" alt="Vivi Chao">
-                        <h5 class="mb-3">Vivi Chao<br>SPO</h5>
-                        <p>Vivi Chao nació el 12/11/1990 en Taiwán. Ella es la operadora de ViVi Stake Pool. 6 años de experiencia en planificación 
-                            inmobiliaria. Administrativa. 3 años en planificación de publicidad. Amante del arte y los lenguajes de formas naturales. 
-                            Curiosa por las criptodivisas y la descentralización. Estudió Cryptocurrency & Disruption en la London School of Economics con  
-                            certificación de Data Analysis Management & Sustainable Career Development. Le apasionan proyectos de blockchain, criptomonedas, web3 y metaverso, que 
-                            reconfiguran las estructuras sociales y económicas.</p>
-                        <a href="https://www.linkedin.com/in/vivi-chao-41622418b/" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-4" src="img/team/Voluntarios-Venezuela.jpg" alt="Voluntarios de Venezuela">                        
-                </div>
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.5s">
-                    <p>
-                        <h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"/>MAS VOLUNTARI@S: </h3>
-                    </p>
-                    <P>
-                        <table>
-                            <TR>
-                                <td width="10%"></td>
-                                <TD width="40%" align="left"> 
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Gabriel "Gabo" Boscan</b> (Diseñador gráfico)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Facundo Varela</b> (Dibujante)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Sheiber Emanuel Balladares Abarca</b> (Asesor en Innovación)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Mauro Andreoli</b> (Embajador de Cadano)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Maximiliano Murad</b> (Artista Plástico)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Aisha Rodriguez</b> (audiovisuales)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Melisa Carrasco</b> (Fotógrafa)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Mery Fiorentini</b> (Fotógrafa)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Lucas Macchiavelli </b> (Ambassador)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Facundo Caramelo</b> (Prensa y Difusión)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Brian Carrasco</b> (Prensa y difusión)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Emanuel Rosales</b> (Prensa y difusión)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MUTALIKO Gloire</b> (Educación Financiera) <br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>ASHUZA Justin</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>BWENGE Charles</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MALOSO Éric</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MUTSIHA Isaac</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>CIZA Rachel</b> (Educación Financiera)<br> 
-                                </TD>
-                                <td width="10%"></td>
-                                <TD width="40%" align="left">
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>AKUZWE, Francois</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MAGUGU, Jean Claude</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MUPENDA, Paul</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>INNOCENT, Akili Mali</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MWATSI MULANO, Oliver</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MAPENZI MASURUKU, Jacques</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>BALANDANI, Pablo</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>LUHERE DAVILA, Lydia</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>KANJIRA MUSAGARA, Martín</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>KAMBALE MUTSIHA, Isaac</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MUHINDO Maloso, Eric</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MULEZI CONSO, MARCELLIN</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>EDUIGE</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MUSA, Amida</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>MAKEKE, Jonas</b> (Educación Financiera)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>IMARA KABIONA, Abel</b> (Educación Financiera) <br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Ing. Carmen Galbán</b> (Prensa y Difusión-Venezuela)<br>
-                                    <i class="fa fa-arrow-right ms-2"></i> <b>Sofía Villareal </b> (Educación Financiera-Nayarit-México)<br>                       
-                                </TD>                                
-                            </TR>
-                        </table>                        
-                    </P>                    
                 </div>     
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/ClaudiaVogel.jpg" alt="Claudia Vogel">
+                        <h5 class="mb-3">Claudia Vogel<br>Artista</h5>
+                        <p>
+                            Nacida en 1957 en la provincia de Entre Ríos en Argentina. Es una artista plástica que vive actualmente en La Cumbre, 
+                            Córdoba, Argentina. Participa del espacio de NFTs, donde actualmente tiene una colección a su nombre, y es parte del 
+                            equipo generador de contenidos de NFTs.
+                        </p>
+                        <!-- <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a> -->
+                    </div>
+                </div>        
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/Talizman.jpg" alt="Patricia Converti">
+                        <h5 class="mb-3">Patricia Converti<br>Artista</h5>
+                        <p>                           
+                            Dueña - Creadora - Artista en ARTE TALIZMAN. 
+                            Estudió en normal nacional superior San Justo
+                            Finalizó en 1978
+                            Vive en Buenos Aires, San Justo
+                        </p>
+                        <!-- <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a> -->
+                    </div>
+                </div>        
+
+                
+                <!-- ************************************************************************************************************************************************************************* -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white p-5" style="height: 950px">
+                        <img class="img-fluid mb-4" src="img/team/BrianCarrasco.jpg" alt="Brian Carrasco">
+                        <h5 class="mb-3">Brian Carrasco<br>Medicina</h5>
+                        <p>                           
+                            Voluntario desde agosto de 2022 del proyecto Token Mithrandir. Brian nació el 29/07/1999 estudiante de medicina 
+                            de la Universidad de Buenos Aires, entusiasta cripto y de blockchain, y amante de la naturaleza y medio ambiente. 
+                            Es uno de los coordinadores del trabajo territorial en la zona norte de la provincia de Buenos Aires (Argentina). 
+                        </p>
+                        <!-- <a href="https://twitter.com/BoazB5475" target="_blank">Mas info <i class="fa fa-arrow-right ms-2"></i></a> -->
+                    </div>
+                </div>        
+                
+
+                <!-- <div class="col-lg-12 col-md-9 wow fadeInUp" data-wow-delay="0.5s">                    
+                    <div class="service-item bg-white p-5" style="height: 520px"> 
+                        <h5 class="mb-3">ORGANIGRAMA DE MITHR</h5>                          
+                        <p style="text-align: center;">
+                            <img class="img-fluid mb-4" src="img/team/Organigrama.jpg" alt="Organigrama">     
+                        </p>                  
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.5s">
                     <img class="img-fluid mb-4" src="img/team/Organigrama.jpeg" alt="Organigrama">                        
-                </div>
-                <!-- <div>
-                    <table>
-                        <tr>
-                            <td align="left">
-                                <img class="img-fluid mb-4" src="img/AndresAndrek.png" alt="Andres Andrek" width="60%" height="60%">
-                            </td>
-                            <td align="left">
-                                Andrés Andrek, nació el 18 de agosto de 1988, en Maria Juana, Provincia de Santa Fe, Argentina. <br>
-                               Tiene 34 años se autopersive abibliofobico, paseador de perros y fanático de Cardano. <br>
-                               Trabaja de programador en el Departamento de web 3.0 de Token Mithrandir. <br>
-                               Además es  parte del equipo de Forestación en diferentes provincias.    
-                            </td>
-                        </tr>
-                    </table>                                        
-                </div>        -->
+                </div> -->
+
+                <div class="container">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-6"><h3 class="m-0 text-primary"><img class="img-fluid me-2" src="img/icon-1.jpg" alt="" style="width: 40px;"/>MAS VOLUNTARI@S: </h3></h1>
+                        <p class="text-primary fs-5 mb-5">Por pais </p>                
+                    </div>
+
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingThree3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Voluntarios de diferentes paises
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                
+                                    <table>
+                                        <TR>
+                                            <td width="5%"></td>
+                                            <TD width="45%" align="left"> 
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Gabriel "Gabo" Boscan</b> (Diseñador gráfico)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Facundo Varela</b> (Dibujante)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Sheiber Emanuel Balladares Abarca</b> (Asesor en Innovación)<br>                       
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Maximiliano Murad</b> (Artista Plástico)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Aisha Rodriguez</b> (audiovisuales)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Melisa Carrasco</b> (Fotógrafa)<br>                                                
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Facundo Caramelo</b> (Prensa y Difusión)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Brian Carrasco</b> (Prensa y difusión)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Emanuel Rosales</b> (Prensa y difusión)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MUTALIKO Gloire</b> (Educación Financiera) <br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>ASHUZA Justin</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>BWENGE Charles</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MALOSO Éric</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MUTSIHA Isaac</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>CIZA Rachel</b> (Educación Financiera)<br> 
+                                            </TD>
+                                            <td width="5%"></td>
+                                            <TD width="45%" align="left">
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>AKUZWE, Francois</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MAGUGU, Jean Claude</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MUPENDA, Paul</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>INNOCENT, Akili Mali</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MWATSI MULANO, Oliver</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MAPENZI MASURUKU, Jacques</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>BALANDANI, Pablo</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>LUHERE DAVILA, Lydia</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>KANJIRA MUSAGARA, Martín</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>KAMBALE MUTSIHA, Isaac</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MUHINDO Maloso, Eric</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MULEZI CONSO, MARCELLIN</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>EDUIGE</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MUSA, Amida</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>MAKEKE, Jonas</b> (Educación Financiera)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>IMARA KABIONA, Abel</b> (Educación Financiera) <br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Ing. Carmen Galbán</b> (Prensa y Difusión-Venezuela)<br>
+                                                <i class="fa fa-arrow-right ms-2"></i> <b>Sofía Villareal </b> (Educación Financiera-Nayarit-México)<br>                       
+                                            </TD>                                
+                                        </TR>
+                                        <tr>
+                                            <td><br></td><td></td><td></td><td></td>
+                                        </tr>
+                                    </table>                        
+                                     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingThree3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Voluntarios de República Democrática del Congo
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <table>
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/1.png" width="150px" height="150px"> 
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Olivier MWATSIMULAMO BANYENE, né dans la cité de kitshanga en RDC Démocratique du Congo. 
+                                            De 2007 à 2013 j'ai fait mes études d'école primaire à l'EP Burungu, De 2013 à 2019 j'ai fait mes études 
+                                            secondaires à l'Institut Kaembe, De 2019 à 2022 j'ai fait mes études secondaires à L'ISDR GL/ Goma. 
+                                            actuellement gradué en Environnement et développement, j'ai été membre actif de la communauté cardano depuis 
+                                            le 7 juillet 2022, et actuellement suis membre actif de Goma cardano hub ans stakepool pool, mais j'occupe 
+                                            spécialement la fonction d'évaluateur des projets chez project catalyst.
+                                        </td>                                                    
+                                    </tr>
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/2.png" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Je suis Muhindo Maloso Erick,  né le 31 Décembre 1997 à Beni, je suis  Congolais et je vis au pays,  
+                                            je suis licencié  en développement rural dans la filière de gestion des entreprises  de développement,  
+                                            je travaille  dans token en tant  que volontaire.
+                                        </td>                                                    
+                                    </tr>    
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/3.png" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Robert BAHATI CINYABUGUMA nationalité congolaise, né à katana/Bukavu en 1996  à l'hôpital général de Fomulac, Mes études 
+                                            primaire à l'Ep luhihi, secondaire inst. luhihi 1 optention du diplôme à l'inst luhihi 2 à Bukavu en 2016, après je 
+                                            commençais à exécuter certaines activités de quelques organisations comme : USAID projet Activités d'USAID Intégre des jeunes << ADIJ >> 
+                                            et programme Éducation development centre  <<  EDC >>, CEPACfida, et ... 
+                                            En 2023 je commençais mes études supérieures en ISDRGL et avoir postuler dans cardano dans cette même époque.        
+                                        </td>                                                    
+                                    </tr>    
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/4.png" width="150px" height="150px">        
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Jonas Makeke : Habite en République Démocratique du Congo (RDC), dans la Ville de Goma, Technicien en développement rural, 
+                                            membre du Goma Wada hub & Stake pool et il est passionné de la blochain.        
+                                        </td>                                                    
+                                    </tr>   
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/5.png" width="150px" height="150px">        
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Isaac Mutsiha, Étudiant à l’Institut supérieur de développement rural des grands lacs de Goma, membre du club Goma wada hub et stakepool, 
+                                            Né à Butembo le 26 décembre 1998, habite en République démocratique du Congo 🇨🇩 en province du Nord-Kivu dans la ville de Goma.        
+                                        </td>                                                    
+                                    </tr>   
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/_MG_5019 (1).jpg" width="150px" height="150px">        
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            MITIMA EMMANUEL Anny, née à Goma en République Démocratique du Congo.
+                                            De 2006 à 20012 j'ai fait l'école primaire à l'Ecole Communautaire du Lac ( ECL), de 2012 à 2017 à l'Institut Mikeno Non Conventionné, 
+                                            et de 20018 à 2023, les études universitaires à l'Institut Supérieur de Développement Rural des Grands Lacs (ISDR/GL). 
+                                            Je suis membre active de la communauté Goma Cardano depuis le 24 mai 2023, membre volontaire de Token MITHR depuis 22 juin 2023 
+                                            et aujourd'hui la Team Leader de Goma Wada Hub/ junior depuis le 6 juillet 2023.                                             
+                                            Mariée à Rémy Bisaga depuis une année et dix  mois        
+                                        </td>                                                    
+                                    </tr>   
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/7.png" width="150px" height="150px">        
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Martin MUSAGARA                                                
+                                            Diplômé en environnement et durabilité, Martin a découvert la technologie Blockchain en 2021 et il est maintenant engagé 
+                                            dans l'intégration d'autres personnes à la technologie à Goma/RDC. Martin est également créateur de contenu marketing pour le pool de Goma.         
+                                        </td>                                                    
+                                    </tr>   
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left">
+                                            <img class="img-fluid mb-4" src="img/team/8.jpg" width="150px" height="150px">        
+                                        </td>
+                                        <td width="80%" align="left">                                                                                                   
+                                            Amida BOTEMBE MUSA, Licenciée en Environnement et Développement Durable, passionnée dans le Marketing Digital et de la technologie de la Blockchain. 
+                                            Membre active de Skatepool Goma/Goma Wada Hub. Co-fondatrice d'une association féminine en ville de Goma/FF. 
+                                        </td>                                                    
+                                    </tr>                                                                                                                                                  
+                                                                                    
+                                </table>                    
+                                     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="accordion-header" id="headingThree3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Voluntarios de Venezuela
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                ¡En breve mostraremos el listado de voluntarios de este pais!
+                            </div>
+                            <!-- <div class="accordion-body">
+                                
+                                <img class="img-fluid mb-4" src="img/team/Voluntarios-Venezuela.jpg" alt="Voluntarios de Venezuela">                                             
+
+                                <table>
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/Daniel_Oduber.png" width="150px" height="150px"> 
+                                        </td>
+                                        <td width="80%" align="left" valign="top">                                                                                                   
+                                            Daniel Oduber, administrador de empresas venezolano con un profundo interés en la tecnología y el área blockchain. 
+                                            Apasionado por el aprendizaje y el mejoramiento continúo, comprometido con la construcción de un mundo mejor a través de la educación y desarrollo de comunidades.
+                                            Cursé estudios Tecnológicos, egresando como TSU en Administración Mención Contabilidad, obtuve el grado de  Licenciado en Administración y 
+                                            realicé una Maestría en Gerencia Empresarial.
+                                            Trabajé en  diversas empresas y áreas administrativas, como docente universitario en cátedras de administración y gestión empresarial.
+                                            Participé en diversos cursos, talleres y diplomados blockchain. Desarrollé comunidades descentralizadas. 
+                                            Adquirí habilidades técnicas fundamentales para el éxito en proyectos cripto.
+                                            La educación es la clave para el éxito de cualquier proyecto cripto, y comprometo a compartir mi experiencia y conocimientos para fomentar la adopción masiva.
+                                            <br><br>
+                                        </td>                                                    
+                                    </tr>
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/Katiuska.jpg" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left" valign="top">                                                                                                   
+                                            Katiuska A. Castellanos G., Venezolana, ingeniero agrónomo y magíster en formulación y evaluación de proyectos, especializada en gerencia y transferencia de
+                                            tecnología agrícola. Con experiencia en el campo de la educación, incluyendo docencia a nivel de educación media y universitaria, participación en programas
+                                            de educación ambiental y trabajo de campo.
+                                            Apasionada por la educación y la naturaleza, con la convicción de que la educación ambiental y financiera es esencial para el desarrollo sostenible.
+                                            Entre mis metas está la de contribuir en los programas que promuevan la formación de ciudadanos conscientes y responsables del medio ambiente y
+                                            de sus finanzas personales, así como el impulsar el uso de las tecnologías de la información y la comunicación para la educación.
+                                            Desde hace aproximadamente 3 años, me he interesado en el ecosistema Blockchain y la Web3, por lo que pertenezco a diversas comunidades y he 
+                                            participado en diversas actividades relacionadas con estos temas. Vivo en constante aprendizaje y estoy comprometida con el desarrollo sostenible.
+                                            <br>
+                                            <br>
+                                        </td>                                                    
+                                    </tr>    
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/LuisBrea.jpg" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left" valign="top">                                                                                                   
+                                            Luis Brea, Community Manager de la ciudad de Caracas, Venezuela. Colaborando en twitter con la cuenta @TokenmithrCCS.  
+                                            Co-autor del espacio #CriptoParaMortales dentro del proyecto educativo Amón. En conjunto con la Ing. Carmen Glbán, pionera de Tokenmithr Venezuela. 
+                                            Enfocado en el valor de la comunidad dentro del entorno Web3, la descentralización y adopción de un ecosistema amigable con el medio ambiente y aquellos 
+                                            que no tienen acceso a los organismos financieros tradicionales.<br><br>
+                                            Estudiante de Ing. de Sistemas en la UNEXPO, Técnico de Soporte IT. Ser parte de la solución siempre será la mejor opción.
+                                            <br><br><br><br>
+                                        </td>                                                    
+                                    </tr>    
+                                    
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/VictorAranguren.jpg" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left" valign="top">  
+                                            Victor Aranguren<br>      <br>                                                                                           
+                                            Programador Autodidacta Venezolano apasionado en Cripto desde los 14 años, actualmente Desarrollador Web3 en IsoVerse Project con gusto especial por proyectos 
+                                            Fintech, DeFI, Gaming Web3 y ReFi.
+                                            <br><br><br><br>
+                                        </td>                                                    
+                                    </tr>  
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/Almeryz.jpg" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left" valign="top">                                                                                                                                               
+                                            Almeryz Lugo, nacida en Punto Fijo, Estado Falcón, Venezuela, es una apasionada cryptoentusiasta, autodidacta y amante de la repostería y la tecnología. 
+                                            Además de ser embajadora de Criptocuriosas y Bitget, se desempeña como Community Manager de Fuccam, una fundación sin fines de lucro que brinda apoyo a pacientes 
+                                            oncológicos en el Estado Falcón.<br>
+                                            Actualmente, cursa el sexto semestre de Administración de Empresas, combinando su dedicación académica con la creación de contenido para la Blockchain de Hive. 
+                                            Con una mente inquieta y orientada al aprendizaje constante, Almeryz se destaca como una figura multifacética comprometida con el avance de la tecnología blockchain 
+                                            y con la noble causa de Fuccam.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>                                            
+                                            <br>
+                                        </td>                                                    
+                                    </tr>   
+
+                                    <tr>                                                    
+                                        <td width="20%" align="left" valign="top">
+                                            <img class="img-fluid mb-4" src="img/team/Yesenia.jpg" width="150px" height="150px">
+                                        </td>
+                                        <td width="80%" align="left" valign="top">                                                                                                                                               
+                                            Yesenia, T.S.U. Administración de Hidrocarburos y T.S.U Producción Industrial
+                                        </td>                                                    
+                                    </tr>   
+                                    
+                                </table>
+                                     
+                            </div> -->
+                        </div>
+                    </div>
+                                
+                             
+                </div>                                 
+                
             </div>            
         </div>
         
@@ -552,14 +986,16 @@
                     <span>
                         <h2>Para comprar NFT, visita la Pagina</h2>
                         <br>                        
-                        <h3><a href="https://www.jpg.store/collection/token-mithrandir" target="_blank">jpg.store</a></h3> 
-                        <br>
-                        <p><b>Algunos ejemplos de nuestros NFTs</b></p>
+                        <h3><a href="https://www.jpg.store/collection/token-mithrandir" target="_blank">jpg.store</a></h3>                         
                     </span>
+                    <img class="img-fluid m-1" src="img/team/NFT-Team.jpg" alt="" style="width: 500px;">
+                    <!--
+                    <br>
+                    <p><b>Algunos ejemplos de nuestros NFTs</b></p> 
                     <img class="img-fluid m-1" src="img/NFT nº24 .jpg" alt="NFT nº24 .jpg" style="width: 235px;">
                     <img class="img-fluid m-1" src="img/1818.jpg" alt="" style="width: 200px;">
                     <img class="img-fluid m-1" src="img/8.jpg" alt="" style="width: 240px;">
-                    <img class="img-fluid m-1" src="img/token circulo.png" alt="" style="width: 180px;">
+                    <img class="img-fluid m-1" src="img/token circulo.png" alt="" style="width: 180px;"> -->
 
                 <div class="col-12 text-center py-4"></div>     
 		<br>
@@ -587,30 +1023,115 @@
             </div>
             <div class="owl-carousel roadmap-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="roadmap-item">                    
-		    <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+		            <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
                     <h5>Marzo 2023</h5>
                     <span>Primera Distribución del Token ya emitido, de forma gratuita, por sorteo y Pre-venta de NFTs.</span>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-point"><span>SEGUIMOS ENTREGANDO...</span></div>
+                    <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
                     <h5>Abril 2023</h5>
-                    <span>Segunda emisión de Tokens Cardano, por venta directa.</span>
+                    <span>Segunda emisión de Tokens Cardano, por venta directa. 1er Libro de MITHR!</span>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-point"><span>¡AUN TENEMOS MAS PARA DAR!</span></div>
+                    <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
                     <h5>Mayo 2023</h5>
-                    <span>Tercera emision del token, y 1era emision de de Tokens en la red Polygon.</span>
+                    <span>Tercera emision del token, y listado en MinSwap.</span>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-point"><span>MUY PRONTO...</span></div>
+                    <div class="roadmap-point"><span>¡SEGUIMOS ENTREGANDO!</span></div>
                     <h5>Junio 2023</h5>
-                    <span>Cuarta emisión y generación de Tokens y NFTs en otras cadenas de bloques. </span>
+                    <span>Cuarta emisión y generación de Tokens y NFTs. </span>
                 </div>
                 <div class="roadmap-item">
-                    <div class="roadmap-point"><span>EN DESARROLLO...</span></div>
+                    <div class="roadmap-point"><span>EN DESARROLLO de POCs</span></div>
                     <h5>Julio 2023</h5>
                     <span>Aplicaciones mobile y Web para control y reclamo automatico de recompensas.</span>
                 </div>               
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>FINALIZADO</span></div>
+                    <h5>Agosto 2023</h5>
+                    <span>Presentacion e inicio de revision de propuestas en Catalyst.</span>
+                </div>               
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+                    <h5>Septiembre  2023</h5>
+                    <span>Segundo Libro de MITHR y Educación financiera</span>
+                </div>        
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡Seguimos juntando adeptos!</span></div>
+                    <h5>Octubre 2023</h5>
+                    <span>Tercer libro de MITHR en Francés!, y más NFTs</span>
+                </div>			
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡Seguimos sumando adeptos!</span></div>
+                    <h5>Noviembre 2023</h5>
+                    <span>Ampliación de Redes y comunidad, educacion, charlas, etc.</span>
+                </div>               
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡Seguimos expandiéndonos!</span></div>
+                    <h5>Diciembre 2023</h5>
+                    <span>Protitpo de emision de Tokens en otras redes EVM.</span>
+                </div>  
+		        <div class="roadmap-item">
+                    <div class="roadmap-point"><span>¡Más funcionalidades!</span></div>
+                    <h5>Enero 2024</h5>
+                    <span>Integracion para hacer SWAP en la pagina oficinal.</span>
+                </div>              
+                <div class="roadmap-item">
+                    <div class="roadmap-point"><span>Sumamos comunidad</span></div>
+                    <h5>Febrero 2024</h5>
+                    <span>Ampliación de comunidad, noticieros, adopcion de comercios, mas voluntarios.</span>
+                </div>                              
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+                    <h5>Marzo 2024</h5>
+                    <span>Creación de alianzas con Universidades</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+                    <h5>Abril 2024</h5>
+                    <span>Buqueda y Creación de más alianzas</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+                    <h5>Mayo 2024</h5>
+                    <span>Charlas, Cursos, Educación en el Metaverso. Espacios para la comunidad.</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>¡FINALIZADO!</span></div>
+                    <h5>Junio 2024</h5>
+                    <span>Eventos de limpieza de costas con la comunidad.</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Julio  2024</h5>
+                    <span>Más Charlas, Cursos, Eventos de limpieza, donaciones.</span>
+                </div>                
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Agosto  2024</h5>
+                    <span>Inmersión en el ecosistema de INTERSECT</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Septiembre 2024</h5>
+                    <span>Haciendo contactos para ampliar nuestra red de Partners</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Octubre 2024</h5>
+                    <span>Creación y envío de propuesta a Catalyst</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Noviembre 2024</h5>
+                    <span>Charlas, Cursos, Eventos, SUMMIT, y mas!</span>
+                </div>
+                <div class="roadmap-item">                    
+		            <div class="roadmap-point"><span>EN PROCESO</span></div>
+                    <h5>Diciembre 2024</h5>
+                    <span>Despedida de año con todo!!!!</span>
+                </div>
             </div>
             <span id="tokenomics"></span>
         </div>                 
@@ -694,9 +1215,9 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Es un Token que te recompensa por cuidar el planeta, que se encuentra emitido en la blockchain de Cardano, en primera instancia. Aunque en un futuro se despelgará en multiples blockchains.
-                                    En Mithrandir estamos convencidos de que la mejor manera de aportar valor es ayudando a cuidar el mediambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos con Token MITRH<br>
-                                    Ademas, Se dejará asentado en la blockchain un registro de lugares, fechas y responsables que plantaron árboles, y/o ayudaron de alguna manera al ecosistema.                                    
+                                    Es un Token que te recompensa por cuidar el planeta, que se encuentra emitido en la blockchain de Cardano, en primera instancia. Aunque en un futuro se desplegará en múltiples blockchains.
+                                    En Mithrandir estamos convencidos de que la mejor manera de aportar valor es ayudando a cuidar el medioambiente y creando vida. Por eso, si por ejemplo, plantas un árbol te recompensamos con Token MITRH<br>
+                                    Además, Se dejará asentado en la blockchain un registro de lugares, fechas y responsables que plantaron árboles, y/o ayudaron de alguna manera al ecosistema.                                    
                                 </div>
                             </div>
                         </div>
@@ -780,11 +1301,11 @@
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    ¿Qué es Cardano? Cardano es una cadena de bloques descentralizada de tercera generación que utiliza un mecanismo de consenso de proof of stake y tiene una funcionalidad de contratos inteligentes para ejecutar aplicaciones descentralizadas. Fundada por Charles Hoskinson, es una de las principales redes de su tipo que se ha desarrollado a través de una investigación revisada por pares de varios años, dado que antiguamente había estado en la experiencia positiva de haber sido parte de los fundadores de Ether (Etherium), llevando lo que sirvió de ese proyecto, más lo nuevo a mejorar nace Cardano. Su principal activo financiero es ADA, ADA es el token nativo de la plataforma de blockchain Cardano al igual que MITHR, ADA se encuentra entre las principales criptodivisas por capitalización de mercado, además de ser uno de los ecosistemas descentralizados de mayor uso en la actualidad. Es uno de los activos digitales más populares que los criptoinversores incluyen en sus carteras de resguardo financiero, gracias a su potencial para inmensas aplicaciones en el mundo real. Además el ecosistema desde que entro en vigencia nunca se cayó, a diferencias de otros ecosistemas financieros descentralizados que presentan fallas constantes. Una de Las visión de Cardano a largo plazo es impulsar las aplicaciones en el mundo real de la tecnología blockchain y volverla más segura, escalable y sostenible para permitir un futuro descentralizado en finanzas. Su equipo pretende conseguirlo mediante pruebas e investigaciones minuciosas antes de lanzar funciones adicionales a la cadena de bloques. Además de mesclar el mundo académico de las investigaciones, en conjunto de las actividades financieras y económicas. Para asegurar, que nunca un grupo de personas tomen decisiones y se puedan equivocar, así se diseño un sistema donde en el trabajo sobre el ecosistema de Cardano participan tres socios claves: IOHK, Cardano Foundation y EMURGO, tres empresas con personal muy capacitado y confiable al respecto. Por eso decidimos sacar este Token por la plataforma de Cardano. Pero conozcamos un poco más quienes son estas tres empresas que toman las desiciones macro en el ecosistema de Cardano, que ellas son IOHK, CARDANO FUNDATION y EMURGO. <br>
+                                    ¿Qué es Cardano? Cardano es una cadena de bloques descentralizada de tercera generación que utiliza un mecanismo de consenso de proof of stake y tiene una funcionalidad de contratos inteligentes para ejecutar aplicaciones descentralizadas. Fundada por Charles Hoskinson, es una de las principales redes de su tipo que se ha desarrollado a través de una investigación revisada por pares de varios años, dado que antiguamente había estado en la experiencia positiva de haber sido parte de los fundadores de Ether (Etherium), llevando lo que sirvió de ese proyecto, más lo nuevo a mejorar nace Cardano. Su principal activo financiero es ADA, ADA es el token nativo de la plataforma de blockchain Cardano al igual que MITHR, ADA se encuentra entre las principales criptodivisas por capitalización de mercado, además de ser uno de los ecosistemas descentralizados de mayor uso en la actualidad. Es uno de los activos digitales más populares que los criptoinversores incluyen en sus carteras de resguardo financiero, gracias a su potencial para inmensas aplicaciones en el mundo real. Además el ecosistema desde que entro en vigencia nunca se cayó, a diferencias de otros ecosistemas financieros descentralizados que presentan fallas constantes. Una de la visión de Cardano a largo plazo es impulsar las aplicaciones en el mundo real de la tecnología blockchain y volverla más segura, escalable y sostenible para permitir un futuro descentralizado en finanzas. Su equipo pretende conseguirlo mediante pruebas e investigaciones minuciosas antes de lanzar funciones adicionales a la cadena de bloques. Además de mezclar el mundo académico de las investigaciones, en conjunto de las actividades financieras y económicas. Para asegurar, que nunca un grupo de personas tomen decisiones y se puedan equivocar, así se diseñó un sistema donde en el trabajo sobre el ecosistema de Cardano participan tres socios claves: IOHK, Cardano Foundation y EMURGO, tres empresas con personal muy capacitado y confiable al respecto. Por eso decidimos sacar este Token por la plataforma de Cardano. Pero conozcamos un poco más quienes son estas tres empresas que toman las decisiones macro en el ecosistema de Cardano, que ellas son IOHK, CARDANO FUNDATION y EMURGO. <br>
                                     ➢ IOHK: Input Output Hong Kong es una empresa tecnológica cofundada por el creador de Cardano, Hoskinson, junto con Jeremy Wood. La empresa es responsable del desarrollo técnico de la blockchain de Cardano, que diseña, amplía y mantiene. Además de ir apoyando iniciativas por diversos países, para programadores, que se quieran especializar en el ecosistema de Cardano. <br>
                                     ➢ Cardano Foundation: La fundación Cardano es un organismo independiente que se encarga de supervisar la adopción de la tecnología de Cardano a través de sus diversas asociaciones. También es responsable de fomentar el compromiso dentro de la comunidad de Cardano y de coordinarse con las industrias para aumentar el conocimiento del potencial de esta tecnología descentralizada. Creando comunidades, charlas y demás cuestiones para poder implementar una educación en tecnología blockchain, en el uso de Cardano. <br>
                                     ➢ EMURGO: Esta empresa es uno de los miembros fundadores de Cardano, y trabaja para desarrollar, respaldar e incubar aplicaciones para el ecosistema de la cadena de bloques. También explora casos de uso comerciales para Cardano y atrae a empresas al potencial de su blockchain. Es una de las mayores empresas en su rubro. <br>
-                                    Por eso creemos los creadores del Token MITHR, que el ecosistema Cardano, es uno de los mejores del mercado para poder sacra, desarrollar y hacer crecer este Token. <br>
+                                    Por eso creemos los creadores del Token MITHR, que el ecosistema Cardano, es uno de los mejores del mercado para poder emitir, desarrollar y hacer crecer este Token. <br>
                                 </div>
                             </div>
                         </div>                                            
@@ -811,12 +1332,14 @@
                <div class="col-md-10">
                 <h5 class="mb-4" ID="voluntario">¿Quieres ser VOLUNTARI@?</h5>
                 <p>¡Sumate a nuestro equipo! Las puertas estan abiertas!<br> Déjanos tu email y contactaremos a la brevedad posible.</p>
+
                 <form id="voluntario-contact-form" name="voluntario-contact-form" method="post" action="voluntario.php">
                     <div class="position-relative">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="email" placeholder="Tu email" name="voluntarioEmail" class="form-control" placeholder="voluntarioEmail" required>
                         <button type="submit" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">QUIERO SER VOLUNTARI@!</button>
                     </div>
                 </form>
+
             </div>
             <!-- ******************  END VOLUNTARIADO FORM *********************** -->       
 
@@ -847,7 +1370,8 @@
                         <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://twitter.com/Tokenmithr" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://www.youtube.com/@chacramithrandir2189" target="_blank"><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://t.me/+JkZmBpevDvVlNjlh" target="_blank"><i class="fab fa-telegram"></i></a>
-                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>                        
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://discord.gg/qDDbRKFj" target="_blank"><i class="fab fa-discord"></i></a>      
+                        <a class="btn btn-square rounded-circle bg-light text-primary me-2" href="https://linktr.ee/tokenmithr" target="_blank"><img src="img/icons8-linktree-48.png" style="width: 20px; height: 20px;"></a>                        
                     </div>
                 </div>
             </div>
