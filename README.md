@@ -1,2 +1,2 @@
 # mithrandir
-Chacra Mithrandir (Cardano Tokens &amp; NFTs)
+Token Mithrandir (Cardano Tokens &amp; NFTs)
